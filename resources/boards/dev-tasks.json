@@ -1,0 +1,54 @@
+{
+  "resource_type": "board",
+  "name": "dev-tasks",
+  "spec": {
+    "board_name": "Development Tasks",
+    "board_kind": "public",
+    "description": "Track development work, bugs, and technical tasks",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Task Name",
+        "type": "name",
+        "description": "Default name column - automatically created"
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "settings": {
+          "labels": ["Not Started", "In Progress", "Code Review", "Testing", "Done"]
+        }
+      },
+      {
+        "title": "Priority",
+        "type": "status", 
+        "settings": {
+          "labels": ["Low", "Medium", "High", "Critical"]
+        }
+      },
+      {
+        "title": "Due Date",
+        "type": "date"
+      },
+      {
+        "title": "Assignee",
+        "type": "people"
+      },
+      {
+        "title": "Story Points",
+        "type": "numbers",
+        "settings": {
+          "unit": "points"
+        }
+      },
+      {
+        "title": "Tags",
+        "type": "tags"
+      },
+      {
+        "title": "Notes",
+        "type": "long_text"
+      }
+    ]
+  }
+}

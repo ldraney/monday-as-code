@@ -1,0 +1,32 @@
+[2025-07-12 14:46:56] CONNECT API - SUCCESS - User: Lucas Draney
+[2025-07-12 14:46:58] CREATE dev-tasks - SUCCESS - Board ID: 9576216342
+[2025-07-12 14:46:58] COLUMN Task Name - SKIPPED - Name column auto-created
+[2025-07-12 14:46:59] COLUMN Status - SUCCESS - Type: status
+[2025-07-12 14:47:01] COLUMN Priority - SUCCESS - Type: status
+[2025-07-12 14:47:02] COLUMN Due Date - SUCCESS - Type: date
+[2025-07-12 14:47:03] COLUMN Assignee - SUCCESS - Type: people
+[2025-07-12 14:47:05] COLUMN Story Points - SUCCESS - Type: numbers
+[2025-07-12 14:47:06] COLUMN Tags - SUCCESS - Type: tags
+[2025-07-12 14:47:08] COLUMN Notes - SUCCESS - Type: long_text
+[2025-07-12 14:47:09] CREATE  - FAILED - Board creation failed
+[2025-07-12 14:47:10] CONNECT API - SUCCESS - User: Lucas Draney
+[2025-07-12 14:47:10] CHECK dev-tasks - EXISTS - Board ID: 9576216342
+[2025-07-12 14:47:10] COLUMN Task Name - SKIPPED - Name column auto-created
+[2025-07-12 14:47:11] COLUMN Status - SKIPPED - Already exists
+[2025-07-12 14:47:11] COLUMN Priority - SKIPPED - Already exists
+[2025-07-12 14:47:12] COLUMN Due Date - SKIPPED - Already exists
+[2025-07-12 14:47:12] COLUMN Assignee - SKIPPED - Already exists
+[2025-07-12 14:47:12] COLUMN Story Points - SKIPPED - Already exists
+[2025-07-12 14:47:13] COLUMN Tags - SKIPPED - Already exists
+[2025-07-12 14:47:13] COLUMN Notes - SKIPPED - Already exists
+[2025-07-12 14:47:15] CREATE  - FAILED - Board creation failed
+[2025-07-12 14:48:52] CONNECT API - SUCCESS - User: Lucas Draney
+[2025-07-12 14:48:53] CHECK dev-tasks - EXISTS - Board ID: 9576216342
+[2025-07-12 14:48:53] COLUMN Task Name - SKIPPED - Name column auto-created
+[2025-07-12 14:48:53] COLUMN Status - SKIPPED - Already exists
+[2025-07-12 14:48:54] COLUMN Priority - SKIPPED - Already exists
+[2025-07-12 14:48:54] COLUMN Due Date - SKIPPED - Already exists
+[2025-07-12 14:48:55] COLUMN Assignee - SKIPPED - Already exists
+[2025-07-12 14:48:55] COLUMN Story Points - SKIPPED - Already exists
+[2025-07-12 14:48:56] COLUMN Tags - SKIPPED - Already exists
+[2025-07-12 14:48:56] COLUMN Notes - SKIPPED - Already exists
