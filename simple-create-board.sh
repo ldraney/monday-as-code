@@ -1,5 +1,5 @@
 #!/bin/bash
-# simple-create-board.sh - Dead simple board creation test
+# simple-create-board.sh - Dead simple board creation test (FIXED)
 
 set -e
 
@@ -60,12 +60,12 @@ echo ""
 # Step 2: Check if board already exists
 echo -e "${BLUE}Step 2: Checking if board already exists...${NC}"
 
-LIST_BOARDS_QUERY=$(cat << EOF
+LIST_BOARDS_QUERY=$(cat << END
 {
-  "query": "query(\$workspace_id: [Int!]) { boards(workspace_ids: \$workspace_id, limit: 50) { id name } }",
-  "variables": {"workspace_id": [$WORKSPACE_ID]}
+  "query": "query(\$workspace_id: [ID!]) { boards(workspace_ids: \$workspace_id, limit: 50) { id name } }",
+  "variables": {"workspace_id": ["$WORKSPACE_ID"]}
 }
-EOF
+END
 )
 
 BOARDS_RESPONSE=$(curl -s \
@@ -90,15 +90,15 @@ echo ""
 # Step 3: Create the board
 echo -e "${BLUE}Step 3: Creating the board...${NC}"
 
-CREATE_BOARD_QUERY=$(cat << EOF
+CREATE_BOARD_QUERY=$(cat << END
 {
-  "query": "mutation(\$board_name: String!, \$workspace_id: Int!) { create_board(board_name: \$board_name, board_kind: public, workspace_id: \$workspace_id) { id name } }",
+  "query": "mutation(\$board_name: String!, \$workspace_id: ID!) { create_board(board_name: \$board_name, board_kind: public, workspace_id: \$workspace_id) { id name } }",
   "variables": {
     "board_name": "$BOARD_NAME",
-    "workspace_id": $WORKSPACE_ID
+    "workspace_id": "$WORKSPACE_ID"
   }
 }
-EOF
+END
 )
 
 CREATE_RESPONSE=$(curl -s \
@@ -124,12 +124,11 @@ if [[ -n "$NEW_BOARD_ID" && "$NEW_BOARD_ID" != "null" ]]; then
   echo "Board ID: $NEW_BOARD_ID"
   echo "Board Name: $BOARD_NAME"
   echo ""
-  echo "You can view it at: https://your-org.monday.com/boards/$NEW_BOARD_ID"
+  echo -e "${GREEN}✅ Success! Your first Monday.com board created via code!${NC}"
+  echo ""
+  echo "🔗 Check it out in your Lab workspace at Monday.com!"
 else
   echo -e "${RED}❌ Something went wrong - no board ID returned${NC}"
   echo "Full response: $CREATE_RESPONSE"
   exit 1
 fi
-
-echo ""
-echo -e "${GREEN}✅ Success! Your first Monday.com board created via code!${NC}"
