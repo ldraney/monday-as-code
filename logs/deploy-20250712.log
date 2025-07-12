@@ -30,3 +30,225 @@
 [2025-07-12 14:48:55] COLUMN Story Points - SKIPPED - Already exists
 [2025-07-12 14:48:56] COLUMN Tags - SKIPPED - Already exists
 [2025-07-12 14:48:56] COLUMN Notes - SKIPPED - Already exists
+[2025-07-12 17:48:04] CONNECT API - SUCCESS - User: Lucas Draney
+[2025-07-12 17:48:05] CHECK bug-tracker - EXISTS - Board ID: 9576405116
+[2025-07-12 17:48:05] COLUMN Bug Title - SKIPPED - Name column auto-created
+[2025-07-12 17:48:07] COLUMN Status - SUCCESS - Type: status
+[2025-07-12 17:48:08] COLUMN Severity - SUCCESS - Type: status
+[2025-07-12 17:48:10] COLUMN Priority - SUCCESS - Type: status
+[2025-07-12 17:48:12] COLUMN Reporter - SUCCESS - Type: people
+[2025-07-12 17:48:14] COLUMN Assignee - SUCCESS - Type: people
+[2025-07-12 17:48:15] COLUMN Date Reported - SUCCESS - Type: date
+[2025-07-12 17:48:18] COLUMN Target Fix Date - SUCCESS - Type: date
+[2025-07-12 17:48:19] COLUMN Environment - SUCCESS - Type: tags
+[2025-07-12 17:48:21] COLUMN Component - SUCCESS - Type: tags
+[2025-07-12 17:48:23] COLUMN Effort (Hours) - SUCCESS - Type: numbers
+[2025-07-12 17:48:24] COLUMN Steps to Reproduce - SUCCESS - Type: long_text
+[2025-07-12 17:48:26] COLUMN Expected Behavior - SUCCESS - Type: long_text
+[2025-07-12 17:48:27] COLUMN Actual Behavior - SUCCESS - Type: long_text
+[2025-07-12 17:48:29] CREATE content-calendar - SUCCESS - Board ID: 9576425757
+[2025-07-12 17:48:29] COLUMN Content Title - SKIPPED - Name column auto-created
+[2025-07-12 17:48:31] COLUMN Status - SUCCESS - Type: status
+[2025-07-12 17:48:33] COLUMN Content Type - SUCCESS - Type: status
+[2025-07-12 17:48:34] COLUMN Author - SUCCESS - Type: people
+[2025-07-12 17:48:36] COLUMN Reviewer - SUCCESS - Type: people
+[2025-07-12 17:48:37] COLUMN Due Date - SUCCESS - Type: date
+[2025-07-12 17:48:39] COLUMN Publish Date - SUCCESS - Type: date
+[2025-07-12 17:48:41] COLUMN Priority - SUCCESS - Type: status
+[2025-07-12 17:48:42] COLUMN Channels - SUCCESS - Type: tags
+[2025-07-12 17:48:43] COLUMN Campaign - SUCCESS - Type: tags
+[2025-07-12 17:48:46] COLUMN Target Audience - SUCCESS - Type: tags
+[2025-07-12 17:48:47] COLUMN Word Count - SUCCESS - Type: numbers
+[2025-07-12 17:48:48] COLUMN Content Brief - SUCCESS - Type: long_text
+[2025-07-12 17:48:50] COLUMN Key Messages - SUCCESS - Type: long_text
+[2025-07-12 17:48:52] COLUMN SEO Keywords - SUCCESS - Type: long_text
+[2025-07-12 17:48:52] CHECK dev-tasks - EXISTS - Board ID: 9576216342
+[2025-07-12 17:48:52] COLUMN Task Name - SKIPPED - Name column auto-created
+[2025-07-12 17:48:53] COLUMN Status - SKIPPED - Already exists
+[2025-07-12 17:48:54] COLUMN Priority - SKIPPED - Already exists
+[2025-07-12 17:48:54] COLUMN Due Date - SKIPPED - Already exists
+[2025-07-12 17:48:54] COLUMN Assignee - SKIPPED - Already exists
+[2025-07-12 17:48:55] COLUMN Story Points - SKIPPED - Already exists
+[2025-07-12 17:48:55] COLUMN Tags - SKIPPED - Already exists
+[2025-07-12 17:48:56] COLUMN Notes - SKIPPED - Already exists
+[2025-07-12 17:48:58] CREATE project-planning - SUCCESS - Board ID: 9576426047
+[2025-07-12 17:48:58] COLUMN Project/Epic - SKIPPED - Name column auto-created
+[2025-07-12 17:48:59] COLUMN Status - SUCCESS - Type: status
+[2025-07-12 17:49:01] COLUMN Priority - SUCCESS - Type: status
+[2025-07-12 17:49:02] COLUMN Project Manager - SUCCESS - Type: people
+[2025-07-12 17:49:03] COLUMN Team Members - SUCCESS - Type: people
+[2025-07-12 17:49:05] COLUMN Start Date - SUCCESS - Type: date
+[2025-07-12 17:49:06] COLUMN Target Completion - SUCCESS - Type: date
+[2025-07-12 17:49:08] COLUMN Budget ($) - SUCCESS - Type: numbers
+[2025-07-12 17:49:09] COLUMN Progress (%) - SUCCESS - Type: numbers
+[2025-07-12 17:49:11] COLUMN Risk Level - SUCCESS - Type: status
+[2025-07-12 17:49:13] COLUMN Department - SUCCESS - Type: tags
+[2025-07-12 17:49:14] COLUMN Project Type - SUCCESS - Type: tags
+[2025-07-12 17:49:16] COLUMN Dependencies - SUCCESS - Type: long_text
+[2025-07-12 17:49:17] COLUMN Success Criteria - SUCCESS - Type: long_text
+[2025-07-12 17:49:19] COLUMN Project Description - SUCCESS - Type: long_text
+[2025-07-12 17:49:21] CREATE sales-pipeline - SUCCESS - Board ID: 9576426361
+[2025-07-12 17:49:21] COLUMN Opportunity - SKIPPED - Name column auto-created
+[2025-07-12 17:49:23] COLUMN Stage - SUCCESS - Type: status
+[2025-07-12 17:49:24] COLUMN Account Executive - SUCCESS - Type: people
+[2025-07-12 17:49:26] COLUMN Lead Source - SUCCESS - Type: status
+[2025-07-12 17:49:27] COLUMN Deal Value ($) - SUCCESS - Type: numbers
+[2025-07-12 17:49:29] COLUMN Probability (%) - SUCCESS - Type: numbers
+[2025-07-12 17:49:30] COLUMN Expected Close Date - SUCCESS - Type: date
+[2025-07-12 17:49:32] COLUMN Last Contact - SUCCESS - Type: date
+[2025-07-12 17:49:33] COLUMN Next Follow-up - SUCCESS - Type: date
+[2025-07-12 17:49:35] COLUMN Company Size - SUCCESS - Type: status
+[2025-07-12 17:49:37] COLUMN Industry - SUCCESS - Type: tags
+[2025-07-12 17:49:39] COLUMN Products - SUCCESS - Type: tags
+[2025-07-12 17:49:40] COLUMN Contact Information - SUCCESS - Type: long_text
+[2025-07-12 17:49:43] COLUMN Notes - SUCCESS - Type: long_text
+[2025-07-12 17:49:44] COLUMN Next Steps - SUCCESS - Type: long_text
+[2025-07-12 17:49:44] DEPLOY lab - SUCCESS - All resources deployed
+[2025-07-12 17:53:05] CONNECT API - SUCCESS - User: Lucas Draney
+[2025-07-12 17:53:06] CHECK bug-tracker - EXISTS - Board ID: 9576405116
+[2025-07-12 17:53:06] COLUMN Bug Title - SKIPPED - Name column auto-created
+[2025-07-12 17:53:06] COLUMN Status - SKIPPED - Already exists
+[2025-07-12 17:53:07] COLUMN Severity - SKIPPED - Already exists
+[2025-07-12 17:53:08] COLUMN Priority - SKIPPED - Already exists
+[2025-07-12 17:53:08] COLUMN Reporter - SKIPPED - Already exists
+[2025-07-12 17:53:08] COLUMN Assignee - SKIPPED - Already exists
+[2025-07-12 17:53:09] COLUMN Date Reported - SKIPPED - Already exists
+[2025-07-12 17:53:09] COLUMN Target Fix Date - SKIPPED - Already exists
+[2025-07-12 17:53:10] COLUMN Environment - SKIPPED - Already exists
+[2025-07-12 17:53:10] COLUMN Component - SKIPPED - Already exists
+[2025-07-12 17:53:11] COLUMN Effort (Hours) - SKIPPED - Already exists
+[2025-07-12 17:53:11] COLUMN Steps to Reproduce - SKIPPED - Already exists
+[2025-07-12 17:53:11] COLUMN Expected Behavior - SKIPPED - Already exists
+[2025-07-12 17:53:12] COLUMN Actual Behavior - SKIPPED - Already exists
+[2025-07-12 17:53:13] CHECK content-calendar - EXISTS - Board ID: 9576425757
+[2025-07-12 17:53:13] COLUMN Content Title - SKIPPED - Name column auto-created
+[2025-07-12 17:53:13] COLUMN Status - SKIPPED - Already exists
+[2025-07-12 17:53:14] COLUMN Content Type - SKIPPED - Already exists
+[2025-07-12 17:53:14] COLUMN Author - SKIPPED - Already exists
+[2025-07-12 17:53:15] COLUMN Reviewer - SKIPPED - Already exists
+[2025-07-12 17:53:16] COLUMN Due Date - SKIPPED - Already exists
+[2025-07-12 17:53:16] COLUMN Publish Date - SKIPPED - Already exists
+[2025-07-12 17:53:17] COLUMN Priority - SKIPPED - Already exists
+[2025-07-12 17:53:17] COLUMN Channels - SKIPPED - Already exists
+[2025-07-12 17:53:18] COLUMN Campaign - SKIPPED - Already exists
+[2025-07-12 17:53:18] COLUMN Target Audience - SKIPPED - Already exists
+[2025-07-12 17:53:19] COLUMN Word Count - SKIPPED - Already exists
+[2025-07-12 17:53:19] COLUMN Content Brief - SKIPPED - Already exists
+[2025-07-12 17:53:20] COLUMN Key Messages - SKIPPED - Already exists
+[2025-07-12 17:53:20] COLUMN SEO Keywords - SKIPPED - Already exists
+[2025-07-12 17:53:21] CHECK dev-tasks - EXISTS - Board ID: 9576216342
+[2025-07-12 17:53:21] COLUMN Task Name - SKIPPED - Name column auto-created
+[2025-07-12 17:53:21] COLUMN Status - SKIPPED - Already exists
+[2025-07-12 17:53:22] COLUMN Priority - SKIPPED - Already exists
+[2025-07-12 17:53:22] COLUMN Due Date - SKIPPED - Already exists
+[2025-07-12 17:53:23] COLUMN Assignee - SKIPPED - Already exists
+[2025-07-12 17:53:23] COLUMN Story Points - SKIPPED - Already exists
+[2025-07-12 17:53:24] COLUMN Tags - SKIPPED - Already exists
+[2025-07-12 17:53:25] COLUMN Notes - SKIPPED - Already exists
+[2025-07-12 17:53:25] CHECK project-planning - EXISTS - Board ID: 9576426047
+[2025-07-12 17:53:25] COLUMN Project/Epic - SKIPPED - Name column auto-created
+[2025-07-12 17:53:26] COLUMN Status - SKIPPED - Already exists
+[2025-07-12 17:53:26] COLUMN Priority - SKIPPED - Already exists
+[2025-07-12 17:53:27] COLUMN Project Manager - SKIPPED - Already exists
+[2025-07-12 17:53:27] COLUMN Team Members - SKIPPED - Already exists
+[2025-07-12 17:53:28] COLUMN Start Date - SKIPPED - Already exists
+[2025-07-12 17:53:28] COLUMN Target Completion - SKIPPED - Already exists
+[2025-07-12 17:53:29] COLUMN Budget ($) - SKIPPED - Already exists
+[2025-07-12 17:53:29] COLUMN Progress (%) - SKIPPED - Already exists
+[2025-07-12 17:53:30] COLUMN Risk Level - SKIPPED - Already exists
+[2025-07-12 17:53:30] COLUMN Department - SKIPPED - Already exists
+[2025-07-12 17:53:31] COLUMN Project Type - SKIPPED - Already exists
+[2025-07-12 17:53:31] COLUMN Dependencies - SKIPPED - Already exists
+[2025-07-12 17:53:32] COLUMN Success Criteria - SKIPPED - Already exists
+[2025-07-12 17:53:32] COLUMN Project Description - SKIPPED - Already exists
+[2025-07-12 17:53:33] CHECK sales-pipeline - EXISTS - Board ID: 9576426361
+[2025-07-12 17:53:33] COLUMN Opportunity - SKIPPED - Name column auto-created
+[2025-07-12 17:53:34] COLUMN Stage - SKIPPED - Already exists
+[2025-07-12 17:53:34] COLUMN Account Executive - SKIPPED - Already exists
+[2025-07-12 17:53:35] COLUMN Lead Source - SKIPPED - Already exists
+[2025-07-12 17:53:35] COLUMN Deal Value ($) - SKIPPED - Already exists
+[2025-07-12 17:53:36] COLUMN Probability (%) - SKIPPED - Already exists
+[2025-07-12 17:53:36] COLUMN Expected Close Date - SKIPPED - Already exists
+[2025-07-12 17:53:37] COLUMN Last Contact - SKIPPED - Already exists
+[2025-07-12 17:53:38] COLUMN Next Follow-up - SKIPPED - Already exists
+[2025-07-12 17:53:38] COLUMN Company Size - SKIPPED - Already exists
+[2025-07-12 17:53:39] COLUMN Industry - SKIPPED - Already exists
+[2025-07-12 17:53:39] COLUMN Products - SKIPPED - Already exists
+[2025-07-12 17:53:40] COLUMN Contact Information - SKIPPED - Already exists
+[2025-07-12 17:53:40] COLUMN Notes - SKIPPED - Already exists
+[2025-07-12 17:53:41] COLUMN Next Steps - SKIPPED - Already exists
+[2025-07-12 17:53:41] DEPLOY lab - SUCCESS - All resources deployed
+[2025-07-12 17:55:03] CONNECT API - SUCCESS - User: Lucas Draney
+[2025-07-12 17:55:05] CREATE bug-tracker - SUCCESS - Board ID: 9576430901
+[2025-07-12 17:55:05] COLUMN Bug Title - SKIPPED - Name column auto-created
+[2025-07-12 17:55:06] COLUMN Status - SUCCESS - Type: status
+[2025-07-12 17:55:08] COLUMN Severity - SUCCESS - Type: status
+[2025-07-12 17:55:10] COLUMN Priority - SUCCESS - Type: status
+[2025-07-12 17:55:11] COLUMN Reporter - SUCCESS - Type: people
+[2025-07-12 17:55:12] COLUMN Assignee - SUCCESS - Type: people
+[2025-07-12 17:55:14] COLUMN Date Reported - SUCCESS - Type: date
+[2025-07-12 17:55:15] COLUMN Target Fix Date - SUCCESS - Type: date
+[2025-07-12 17:55:17] COLUMN Environment - SUCCESS - Type: tags
+[2025-07-12 17:55:19] COLUMN Component - SUCCESS - Type: tags
+[2025-07-12 17:55:21] COLUMN Effort (Hours) - SUCCESS - Type: numbers
+[2025-07-12 17:55:22] COLUMN Steps to Reproduce - SUCCESS - Type: long_text
+[2025-07-12 17:55:24] COLUMN Expected Behavior - SUCCESS - Type: long_text
+[2025-07-12 17:55:26] COLUMN Actual Behavior - SUCCESS - Type: long_text
+[2025-07-12 17:55:27] CREATE content-calendar - SUCCESS - Board ID: 9576431287
+[2025-07-12 17:55:27] COLUMN Content Title - SKIPPED - Name column auto-created
+[2025-07-12 17:55:29] COLUMN Status - SUCCESS - Type: status
+[2025-07-12 17:55:30] COLUMN Content Type - SUCCESS - Type: status
+[2025-07-12 17:55:32] COLUMN Author - SUCCESS - Type: people
+[2025-07-12 17:55:33] COLUMN Reviewer - SUCCESS - Type: people
+[2025-07-12 17:55:35] COLUMN Due Date - SUCCESS - Type: date
+[2025-07-12 17:55:36] COLUMN Publish Date - SUCCESS - Type: date
+[2025-07-12 17:55:37] COLUMN Priority - SUCCESS - Type: status
+[2025-07-12 17:55:38] COLUMN Channels - SUCCESS - Type: tags
+[2025-07-12 17:55:40] COLUMN Campaign - SUCCESS - Type: tags
+[2025-07-12 17:55:41] COLUMN Target Audience - SUCCESS - Type: tags
+[2025-07-12 17:55:43] COLUMN Word Count - SUCCESS - Type: numbers
+[2025-07-12 17:55:44] COLUMN Content Brief - SUCCESS - Type: long_text
+[2025-07-12 17:55:45] COLUMN Key Messages - SUCCESS - Type: long_text
+[2025-07-12 17:55:47] COLUMN SEO Keywords - SUCCESS - Type: long_text
+[2025-07-12 17:55:50] CREATE dev-tasks - SUCCESS - Board ID: 9576431634
+[2025-07-12 17:55:50] COLUMN Task Name - SKIPPED - Name column auto-created
+[2025-07-12 17:55:51] COLUMN Status - SUCCESS - Type: status
+[2025-07-12 17:55:52] COLUMN Priority - SUCCESS - Type: status
+[2025-07-12 17:55:54] COLUMN Due Date - SUCCESS - Type: date
+[2025-07-12 17:55:55] COLUMN Assignee - SUCCESS - Type: people
+[2025-07-12 17:55:56] COLUMN Story Points - SUCCESS - Type: numbers
+[2025-07-12 17:55:58] COLUMN Tags - SUCCESS - Type: tags
+[2025-07-12 17:55:59] COLUMN Notes - SUCCESS - Type: long_text
+[2025-07-12 17:56:01] CREATE project-planning - SUCCESS - Board ID: 9576431762
+[2025-07-12 17:56:01] COLUMN Project/Epic - SKIPPED - Name column auto-created
+[2025-07-12 17:56:03] COLUMN Status - SUCCESS - Type: status
+[2025-07-12 17:56:04] COLUMN Priority - SUCCESS - Type: status
+[2025-07-12 17:56:05] COLUMN Project Manager - SUCCESS - Type: people
+[2025-07-12 17:56:07] COLUMN Team Members - SUCCESS - Type: people
+[2025-07-12 17:56:09] COLUMN Start Date - SUCCESS - Type: date
+[2025-07-12 17:56:11] COLUMN Target Completion - SUCCESS - Type: date
+[2025-07-12 17:56:12] COLUMN Budget ($) - SUCCESS - Type: numbers
+[2025-07-12 17:56:13] COLUMN Progress (%) - SUCCESS - Type: numbers
+[2025-07-12 17:56:15] COLUMN Risk Level - SUCCESS - Type: status
+[2025-07-12 17:56:16] COLUMN Department - SUCCESS - Type: tags
+[2025-07-12 17:56:18] COLUMN Project Type - SUCCESS - Type: tags
+[2025-07-12 17:56:19] COLUMN Dependencies - SUCCESS - Type: long_text
+[2025-07-12 17:56:21] COLUMN Success Criteria - SUCCESS - Type: long_text
+[2025-07-12 17:56:22] COLUMN Project Description - SUCCESS - Type: long_text
+[2025-07-12 17:56:24] CREATE sales-pipeline - SUCCESS - Board ID: 9576431975
+[2025-07-12 17:56:24] COLUMN Opportunity - SKIPPED - Name column auto-created
+[2025-07-12 17:56:25] COLUMN Stage - SUCCESS - Type: status
+[2025-07-12 17:56:27] COLUMN Account Executive - SUCCESS - Type: people
+[2025-07-12 17:56:28] COLUMN Lead Source - SUCCESS - Type: status
+[2025-07-12 17:56:30] COLUMN Deal Value ($) - SUCCESS - Type: numbers
+[2025-07-12 17:56:31] COLUMN Probability (%) - SUCCESS - Type: numbers
+[2025-07-12 17:56:33] COLUMN Expected Close Date - SUCCESS - Type: date
+[2025-07-12 17:56:34] COLUMN Last Contact - SUCCESS - Type: date
+[2025-07-12 17:56:35] COLUMN Next Follow-up - SUCCESS - Type: date
+[2025-07-12 17:56:37] COLUMN Company Size - SUCCESS - Type: status
+[2025-07-12 17:56:38] COLUMN Industry - SUCCESS - Type: tags
+[2025-07-12 17:56:39] COLUMN Products - SUCCESS - Type: tags
+[2025-07-12 17:56:41] COLUMN Contact Information - SUCCESS - Type: long_text
+[2025-07-12 17:56:43] COLUMN Notes - SUCCESS - Type: long_text
+[2025-07-12 17:56:44] COLUMN Next Steps - SUCCESS - Type: long_text
+[2025-07-12 17:56:44] DEPLOY lab - SUCCESS - All resources deployed
