@@ -7,7 +7,6 @@ on:
       - 'resources/**'
       - 'configs/**'
       - 'scripts/**'
-  
   push:
     branches: [main]
     paths:
