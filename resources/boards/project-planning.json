@@ -1,0 +1,94 @@
+{
+  "resource_type": "board",
+  "name": "project-planning",
+  "spec": {
+    "board_name": "Project Planning",
+    "board_kind": "public",
+    "description": "Strategic project planning and milestone tracking",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Project/Epic",
+        "type": "name",
+        "description": "Project or epic name"
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "settings": {
+          "labels": ["Planning", "In Progress", "On Hold", "Review", "Completed", "Cancelled"]
+        }
+      },
+      {
+        "title": "Priority",
+        "type": "status",
+        "settings": {
+          "labels": ["Low", "Medium", "High", "Critical"]
+        }
+      },
+      {
+        "title": "Project Manager",
+        "type": "people"
+      },
+      {
+        "title": "Team Members",
+        "type": "people"
+      },
+      {
+        "title": "Start Date",
+        "type": "date"
+      },
+      {
+        "title": "Target Completion",
+        "type": "date"
+      },
+      {
+        "title": "Budget ($)",
+        "type": "numbers",
+        "settings": {
+          "unit": "dollars"
+        }
+      },
+      {
+        "title": "Progress (%)",
+        "type": "numbers",
+        "settings": {
+          "unit": "percent"
+        }
+      },
+      {
+        "title": "Risk Level",
+        "type": "status",
+        "settings": {
+          "labels": ["Low", "Medium", "High"]
+        }
+      },
+      {
+        "title": "Department",
+        "type": "tags",
+        "settings": {
+          "tags": ["Engineering", "Product", "Marketing", "Sales", "Operations", "Finance"]
+        }
+      },
+      {
+        "title": "Project Type",
+        "type": "tags",
+        "settings": {
+          "tags": ["Feature", "Infrastructure", "Research", "Maintenance", "Compliance"]
+        }
+      },
+      {
+        "title": "Dependencies",
+        "type": "long_text"
+      },
+      {
+        "title": "Success Criteria",
+        "type": "long_text"
+      },
+      {
+        "title": "Project Description",
+        "type": "long_text"
+      }
+    ]
+  }
+}

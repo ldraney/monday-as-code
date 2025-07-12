@@ -1,0 +1,87 @@
+{
+  "resource_type": "board",
+  "name": "bug-tracker",
+  "spec": {
+    "board_name": "Bug Tracker",
+    "board_kind": "public",
+    "description": "Track bugs, issues, and defects across the application",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Bug Title",
+        "type": "name",
+        "description": "Default name column for bug titles"
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "settings": {
+          "labels": ["New", "Investigating", "In Progress", "Fixed", "Verified", "Closed"]
+        }
+      },
+      {
+        "title": "Severity",
+        "type": "status",
+        "settings": {
+          "labels": ["Low", "Medium", "High", "Critical", "Blocker"]
+        }
+      },
+      {
+        "title": "Priority",
+        "type": "status",
+        "settings": {
+          "labels": ["P4", "P3", "P2", "P1", "P0"]
+        }
+      },
+      {
+        "title": "Reporter",
+        "type": "people"
+      },
+      {
+        "title": "Assignee",
+        "type": "people"
+      },
+      {
+        "title": "Date Reported",
+        "type": "date"
+      },
+      {
+        "title": "Target Fix Date",
+        "type": "date"
+      },
+      {
+        "title": "Environment",
+        "type": "tags",
+        "settings": {
+          "tags": ["Production", "Staging", "Development", "QA"]
+        }
+      },
+      {
+        "title": "Component",
+        "type": "tags",
+        "settings": {
+          "tags": ["Frontend", "Backend", "Database", "API", "UI/UX", "Infrastructure"]
+        }
+      },
+      {
+        "title": "Effort (Hours)",
+        "type": "numbers",
+        "settings": {
+          "unit": "hours"
+        }
+      },
+      {
+        "title": "Steps to Reproduce",
+        "type": "long_text"
+      },
+      {
+        "title": "Expected Behavior",
+        "type": "long_text"
+      },
+      {
+        "title": "Actual Behavior",
+        "type": "long_text"
+      }
+    ]
+  }
+}

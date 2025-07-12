@@ -1,0 +1,94 @@
+{
+  "resource_type": "board",
+  "name": "sales-pipeline",
+  "spec": {
+    "board_name": "Sales Pipeline",
+    "board_kind": "public",
+    "description": "Track sales opportunities and customer relationships",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Opportunity",
+        "type": "name",
+        "description": "Sales opportunity or prospect name"
+      },
+      {
+        "title": "Stage",
+        "type": "status",
+        "settings": {
+          "labels": ["Lead", "Qualified", "Proposal", "Negotiation", "Closed Won", "Closed Lost"]
+        }
+      },
+      {
+        "title": "Account Executive",
+        "type": "people"
+      },
+      {
+        "title": "Lead Source",
+        "type": "status",
+        "settings": {
+          "labels": ["Website", "Referral", "Cold Outreach", "Marketing Campaign", "Trade Show", "Partner"]
+        }
+      },
+      {
+        "title": "Deal Value ($)",
+        "type": "numbers",
+        "settings": {
+          "unit": "dollars"
+        }
+      },
+      {
+        "title": "Probability (%)",
+        "type": "numbers",
+        "settings": {
+          "unit": "percent"
+        }
+      },
+      {
+        "title": "Expected Close Date",
+        "type": "date"
+      },
+      {
+        "title": "Last Contact",
+        "type": "date"
+      },
+      {
+        "title": "Next Follow-up",
+        "type": "date"
+      },
+      {
+        "title": "Company Size",
+        "type": "status",
+        "settings": {
+          "labels": ["Startup", "SMB", "Mid-Market", "Enterprise"]
+        }
+      },
+      {
+        "title": "Industry",
+        "type": "tags",
+        "settings": {
+          "tags": ["Technology", "Healthcare", "Finance", "Retail", "Manufacturing", "Education", "Government"]
+        }
+      },
+      {
+        "title": "Products",
+        "type": "tags",
+        "settings": {
+          "tags": ["Basic Plan", "Pro Plan", "Enterprise Plan", "Custom Solution"]
+        }
+      },
+      {
+        "title": "Contact Information",
+        "type": "long_text"
+      },
+      {
+        "title": "Notes",
+        "type": "long_text"
+      },
+      {
+        "title": "Next Steps",
+        "type": "long_text"
+      }
+    ]
+  }
+}

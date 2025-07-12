@@ -1,0 +1,94 @@
+{
+  "resource_type": "board",
+  "name": "content-calendar",
+  "spec": {
+    "board_name": "Content Calendar",
+    "board_kind": "public", 
+    "description": "Plan, create, and publish marketing content across all channels",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Content Title",
+        "type": "name",
+        "description": "Content piece title or topic"
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "settings": {
+          "labels": ["Idea", "In Development", "Draft", "Review", "Approved", "Published", "Archived"]
+        }
+      },
+      {
+        "title": "Content Type",
+        "type": "status",
+        "settings": {
+          "labels": ["Blog Post", "Social Media", "Video", "Podcast", "Email", "Whitepaper", "Webinar"]
+        }
+      },
+      {
+        "title": "Author",
+        "type": "people"
+      },
+      {
+        "title": "Reviewer",
+        "type": "people"
+      },
+      {
+        "title": "Due Date",
+        "type": "date"
+      },
+      {
+        "title": "Publish Date",
+        "type": "date"
+      },
+      {
+        "title": "Priority",
+        "type": "status",
+        "settings": {
+          "labels": ["Low", "Medium", "High", "Urgent"]
+        }
+      },
+      {
+        "title": "Channels",
+        "type": "tags",
+        "settings": {
+          "tags": ["Website", "LinkedIn", "Twitter", "Instagram", "Facebook", "YouTube", "Email Newsletter"]
+        }
+      },
+      {
+        "title": "Campaign",
+        "type": "tags",
+        "settings": {
+          "tags": ["Product Launch", "Brand Awareness", "Lead Generation", "Customer Education", "Event Promotion"]
+        }
+      },
+      {
+        "title": "Target Audience",
+        "type": "tags",
+        "settings": {
+          "tags": ["Developers", "Marketing Managers", "C-Suite", "Small Business", "Enterprise"]
+        }
+      },
+      {
+        "title": "Word Count",
+        "type": "numbers",
+        "settings": {
+          "unit": "words"
+        }
+      },
+      {
+        "title": "Content Brief",
+        "type": "long_text"
+      },
+      {
+        "title": "Key Messages",
+        "type": "long_text"
+      },
+      {
+        "title": "SEO Keywords",
+        "type": "long_text"
+      }
+    ]
+  }
+}
