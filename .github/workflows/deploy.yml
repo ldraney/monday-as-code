@@ -110,6 +110,27 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y jq curl
 
+      - name: Debug Environment
+        run: |
+          echo "🔍 Debugging CI environment..."
+          
+          # Check file permissions
+          ls -la scripts/deploy.sh
+          
+          # Check if script is executable
+          chmod +x scripts/deploy.sh
+          
+          # Check environment files
+          ls -la configs/
+          cat configs/lab.env
+          
+          # Check API token (safely - just length)
+          echo "API token set: ${MONDAY_API_TOKEN:+YES}"
+          echo "API token length: ${#MONDAY_API_TOKEN}"
+          
+          # Test basic API connection
+          curl -s -H "Authorization: $MONDAY_API_TOKEN" -H "Content-Type: application/json" -d '{"query": "{ me { name } }"}' https://api.monday.com/v2 | jq .
+
       - name: Plan deployment to Lab
         run: |
           chmod +x scripts/deploy.sh
