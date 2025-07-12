@@ -214,16 +214,16 @@ END
 echo ""
 echo -e "${BLUE}Step 5: Creating columns...${NC}"
 
-# Create basic columns without complex settings first
-# We can always add settings later once the columns exist
+# Create basic columns with correct API type names
+# Monday.com API is strict about column type names
 
 create_column "Status" "status"
-create_column "Priority" "priority"  
+create_column "Priority" "status"  # Priority uses 'status' type, not 'priority'
 create_column "Due Date" "date"
 create_column "Assignee" "people"
 create_column "Progress" "numbers"
 create_column "Tags" "tags"
-create_column "Notes" "text"
+create_column "Notes" "long_text"  # Use 'long_text' instead of 'text'
 
 echo ""
 echo -e "${GREEN}🎉 Success! Board with columns created/updated!${NC}"
@@ -234,13 +234,13 @@ echo "   ID: $BOARD_ID"
 echo "   Workspace: $WORKSPACE_ID"
 echo ""
 echo "📊 Columns created:"
-echo "   • Status (default settings)"
-echo "   • Priority (default settings)"
-echo "   • Due Date"
-echo "   • Assignee (people picker)"
-echo "   • Progress (numbers)"
-echo "   • Tags"
-echo "   • Notes (text)"
+echo "   • Status (status type)"
+echo "   • Priority (status type - customize labels in UI)"
+echo "   • Due Date (date type)"
+echo "   • Assignee (people type)"
+echo "   • Progress (numbers type)"
+echo "   • Tags (tags type)"
+echo "   • Notes (long_text type)"
 echo ""
 echo "🔗 Check it out in your Lab workspace at Monday.com!"
 echo ""
