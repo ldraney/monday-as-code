@@ -1,0 +1,487 @@
+{
+  "environment": "lab",
+  "workspace_id": "11619397",
+  "initialized_at": "2025-07-13T00:23:34Z",
+  "last_updated": "2025-07-13T00:26:26Z",
+  "boards": {
+    "sales-pipeline": {
+      "resource_name": "sales-pipeline",
+      "board_id": "9576431975",
+      "board_name": "Sales Pipeline",
+      "workspace_id": "11619397",
+      "description": "Track sales opportunities and customer relationships",
+      "board_kind": "public",
+      "updated_at": "2025-07-12T23:58:11Z",
+      "managed_by_code": false,
+      "columns": [
+        {
+          "column_id": "name",
+          "title": "Name",
+          "type": "name",
+          "description": null
+        },
+        {
+          "column_id": "color_mkss8210",
+          "title": "Stage",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "multiple_person_mkss6n95",
+          "title": "Account Executive",
+          "type": "people",
+          "description": null
+        },
+        {
+          "column_id": "color_mkssxkda",
+          "title": "Lead Source",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "numeric_mkss8dvt",
+          "title": "Deal Value ($)",
+          "type": "numbers",
+          "description": null
+        },
+        {
+          "column_id": "numeric_mkssaxb9",
+          "title": "Probability (%)",
+          "type": "numbers",
+          "description": null
+        },
+        {
+          "column_id": "date_mkssrydw",
+          "title": "Expected Close Date",
+          "type": "date",
+          "description": null
+        },
+        {
+          "column_id": "date_mksswcc6",
+          "title": "Last Contact",
+          "type": "date",
+          "description": null
+        },
+        {
+          "column_id": "date_mkss2a0h",
+          "title": "Next Follow-up",
+          "type": "date",
+          "description": null
+        },
+        {
+          "column_id": "color_mkss9j31",
+          "title": "Company Size",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "tag_mkss2bes",
+          "title": "Industry",
+          "type": "tags",
+          "description": null
+        },
+        {
+          "column_id": "tag_mkss2j1d",
+          "title": "Products",
+          "type": "tags",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mkssnhkn",
+          "title": "Contact Information",
+          "type": "long_text",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mksss919",
+          "title": "Notes",
+          "type": "long_text",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mkssg3zj",
+          "title": "Next Steps",
+          "type": "long_text",
+          "description": null
+        },
+        {
+          "column_id": "numeric_mkss253a",
+          "title": "Deal Value ($)",
+          "type": "numbers",
+          "description": null
+        }
+      ]
+    },
+    "project-planning": {
+      "resource_name": "project-planning",
+      "board_id": "9576431762",
+      "board_name": "Project Planning",
+      "workspace_id": "11619397",
+      "description": "Strategic project planning and milestone tracking",
+      "board_kind": "public",
+      "updated_at": "2025-07-12T23:58:05Z",
+      "managed_by_code": false,
+      "columns": [
+        {
+          "column_id": "name",
+          "title": "Name",
+          "type": "name",
+          "description": null
+        },
+        {
+          "column_id": "color_mkss9c13",
+          "title": "Status",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "color_mkss7rm5",
+          "title": "Priority",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "multiple_person_mkssm9fn",
+          "title": "Project Manager",
+          "type": "people",
+          "description": null
+        },
+        {
+          "column_id": "multiple_person_mkssrf7h",
+          "title": "Team Members",
+          "type": "people",
+          "description": null
+        },
+        {
+          "column_id": "date_mkssywjc",
+          "title": "Start Date",
+          "type": "date",
+          "description": null
+        },
+        {
+          "column_id": "date_mkss1fbg",
+          "title": "Target Completion",
+          "type": "date",
+          "description": null
+        },
+        {
+          "column_id": "numeric_mkssz7cb",
+          "title": "Budget ($)",
+          "type": "numbers",
+          "description": null
+        },
+        {
+          "column_id": "numeric_mkssj67p",
+          "title": "Progress (%)",
+          "type": "numbers",
+          "description": null
+        },
+        {
+          "column_id": "color_mkssewa9",
+          "title": "Risk Level",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "tag_mkssjk02",
+          "title": "Department",
+          "type": "tags",
+          "description": null
+        },
+        {
+          "column_id": "tag_mkssdcfd",
+          "title": "Project Type",
+          "type": "tags",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mkssmdp",
+          "title": "Dependencies",
+          "type": "long_text",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mksseq7j",
+          "title": "Success Criteria",
+          "type": "long_text",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mkssbw5n",
+          "title": "Project Description",
+          "type": "long_text",
+          "description": null
+        },
+        {
+          "column_id": "numeric_mkss715f",
+          "title": "Budget ($)",
+          "type": "numbers",
+          "description": null
+        }
+      ]
+    },
+    "development-tasks": {
+      "resource_name": "development-tasks",
+      "board_id": "9576431634",
+      "board_name": "Development Tasks",
+      "workspace_id": "11619397",
+      "description": "Track development work, bugs, and technical tasks",
+      "board_kind": "public",
+      "updated_at": "2025-07-12T23:55:59Z",
+      "managed_by_code": false,
+      "columns": [
+        {
+          "column_id": "name",
+          "title": "Name",
+          "type": "name",
+          "description": null
+        },
+        {
+          "column_id": "color_mksswnvq",
+          "title": "Status",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "color_mkss5qkp",
+          "title": "Priority",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "date_mkss93jk",
+          "title": "Due Date",
+          "type": "date",
+          "description": null
+        },
+        {
+          "column_id": "multiple_person_mkssmac7",
+          "title": "Assignee",
+          "type": "people",
+          "description": null
+        },
+        {
+          "column_id": "numeric_mkss2b27",
+          "title": "Story Points",
+          "type": "numbers",
+          "description": null
+        },
+        {
+          "column_id": "tag_mksspqsw",
+          "title": "Tags",
+          "type": "tags",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mkssw06k",
+          "title": "Notes",
+          "type": "long_text",
+          "description": null
+        }
+      ]
+    },
+    "content-calendar": {
+      "resource_name": "content-calendar",
+      "board_id": "9576431287",
+      "board_name": "Content Calendar",
+      "workspace_id": "11619397",
+      "description": "Plan, create, and publish marketing content across all channels",
+      "board_kind": "public",
+      "updated_at": "2025-07-12T23:55:47Z",
+      "managed_by_code": false,
+      "columns": [
+        {
+          "column_id": "name",
+          "title": "Name",
+          "type": "name",
+          "description": null
+        },
+        {
+          "column_id": "color_mkssz6gx",
+          "title": "Status",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "color_mkss926h",
+          "title": "Content Type",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "multiple_person_mkssqe16",
+          "title": "Author",
+          "type": "people",
+          "description": null
+        },
+        {
+          "column_id": "multiple_person_mksshr8h",
+          "title": "Reviewer",
+          "type": "people",
+          "description": null
+        },
+        {
+          "column_id": "date_mkssn0j7",
+          "title": "Due Date",
+          "type": "date",
+          "description": null
+        },
+        {
+          "column_id": "date_mkssmm4p",
+          "title": "Publish Date",
+          "type": "date",
+          "description": null
+        },
+        {
+          "column_id": "color_mkssg8w8",
+          "title": "Priority",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "tag_mksseg15",
+          "title": "Channels",
+          "type": "tags",
+          "description": null
+        },
+        {
+          "column_id": "tag_mkssbwqv",
+          "title": "Campaign",
+          "type": "tags",
+          "description": null
+        },
+        {
+          "column_id": "tag_mkssnb1b",
+          "title": "Target Audience",
+          "type": "tags",
+          "description": null
+        },
+        {
+          "column_id": "numeric_mkssph9d",
+          "title": "Word Count",
+          "type": "numbers",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mksshyzj",
+          "title": "Content Brief",
+          "type": "long_text",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mkss7snq",
+          "title": "Key Messages",
+          "type": "long_text",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mksskrdc",
+          "title": "SEO Keywords",
+          "type": "long_text",
+          "description": null
+        }
+      ]
+    },
+    "bug-tracker": {
+      "resource_name": "bug-tracker",
+      "board_id": "9576430901",
+      "board_name": "Bug Tracker",
+      "workspace_id": "11619397",
+      "description": "Track bugs, issues, and defects across the application",
+      "board_kind": "public",
+      "updated_at": "2025-07-12T23:55:25Z",
+      "managed_by_code": false,
+      "columns": [
+        {
+          "column_id": "name",
+          "title": "Name",
+          "type": "name",
+          "description": null
+        },
+        {
+          "column_id": "color_mkssmx2y",
+          "title": "Status",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "color_mkss3jec",
+          "title": "Severity",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "color_mkss7xgc",
+          "title": "Priority",
+          "type": "status",
+          "description": null
+        },
+        {
+          "column_id": "multiple_person_mkss3xvy",
+          "title": "Reporter",
+          "type": "people",
+          "description": null
+        },
+        {
+          "column_id": "multiple_person_mkssma9y",
+          "title": "Assignee",
+          "type": "people",
+          "description": null
+        },
+        {
+          "column_id": "date_mkssy92b",
+          "title": "Date Reported",
+          "type": "date",
+          "description": null
+        },
+        {
+          "column_id": "date_mkssby7t",
+          "title": "Target Fix Date",
+          "type": "date",
+          "description": null
+        },
+        {
+          "column_id": "tag_mkssaca4",
+          "title": "Environment",
+          "type": "tags",
+          "description": null
+        },
+        {
+          "column_id": "tag_mkss32gv",
+          "title": "Component",
+          "type": "tags",
+          "description": null
+        },
+        {
+          "column_id": "numeric_mkss35xy",
+          "title": "Effort (Hours)",
+          "type": "numbers",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mkssh3p4",
+          "title": "Steps to Reproduce",
+          "type": "long_text",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mkssdhqt",
+          "title": "Expected Behavior",
+          "type": "long_text",
+          "description": null
+        },
+        {
+          "column_id": "long_text_mkssewq5",
+          "title": "Actual Behavior",
+          "type": "long_text",
+          "description": null
+        }
+      ]
+    }
+  },
+  "connections": {},
+  "metadata": {
+    "version": "1.0.0",
+    "managed_by": "monday-as-code"
+  }
+}
