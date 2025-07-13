@@ -1,7 +1,7 @@
 # Monday.com Lab Workspace - Connection Analysis Report
 
-**Generated:** $(date)  
-**Workspace:** Lab (ID: 9736208)  
+**Generated:** Saturday July 12, 2025
+**Workspaces:** CRM, Production, Lab
 **Analysis Type:** Board Connection Discovery  
 
 ## Executive Summary
