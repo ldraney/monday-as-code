@@ -1,216 +1,143 @@
 # Monday as Code 🚀
 
-> Infrastructure as Code for Monday.com - The first open-source tool to manage Monday.com workspaces, boards, and resources programmatically
+> Infrastructure as Code for Monday.com - Workspace management, board discovery, and connection mapping
 
-## 🎯 **Project Vision**
+## 🎯 **Current Status - Phase 2: Connection Discovery**
 
-Monday as Code brings the power of Infrastructure as Code (IaC) to Monday.com, similar to how Terraform manages cloud infrastructure. This allows teams to:
+### **✅ Completed - Infrastructure Discovery & State Capture**
+- [x] **Workspace-based architecture** - Lab, Production, CRM environments
+- [x] **Complete state discovery** - 38 boards exported from Lab workspace
+- [x] **JSON-based board definitions** with deployable configurations
+- [x] **State management system** - tracks boards across workspaces
+- [x] **Rate-limit safe discovery** - handles Monday.com API constraints
+- [x] **Modular repository structure** - organized by workspace + cross-cutting concerns
 
-- **Version control** their Monday.com workspace configurations
-- **Standardize** Monday.com setups across environments (dev/staging/production)
-- **Scale** Monday.com management for enterprise teams with dozens of workspaces
-- **Collaborate** on Monday.com changes through code reviews
-- **Deploy connected board ecosystems** for complete project workflows
+### **🔥 Current Focus - Connection Mapping & Board Cleanup**
 
-**Market Opportunity**: No existing "Monday.com as Code" product exists - this could become the Terraform for Monday.com.
-
-## ✅ **Current Status - Milestone 3 Complete**
-
-### **Working Infrastructure as Code System** ✅
-- [x] Declarative JSON board definitions with environment variable support
-- [x] Environment separation (`configs/lab.env`, `configs/production.env`)
-- [x] Terraform-like `plan/apply/destroy` commands
-- [x] Reusable Monday.com API library (`scripts/monday-api.sh`)
-- [x] Comprehensive deploy script (`scripts/deploy.sh`)
-- [x] Idempotent operations (running twice is safe)
-- [x] Error handling and validation
-- [x] Deployment logging
-- [x] Successfully tested with "Development Tasks" board
-
-### **Live Production Results** ✅
-```bash
-$ ./scripts/deploy.sh plan --env lab
-✅ Connected as: Lucas Draney
-📋 Existing boards: Development Tasks (+ 30 others)
-📝 UPDATE Board 'Development Tasks' (resource: dev-tasks)
-💡 Run 'apply' to make these changes
-
-$ ./scripts/deploy.sh apply --env lab
-✅ All columns already exist and were skipped (idempotent)
-🎉 Deployment completed successfully
-```
+**Goal**: Create a complete map of board connections starting from CRM, identify unused boards for archival.
 
 ## 📁 **Repository Structure**
 
 ```
-ldraney/monday-as-code/
-├── README.md                    # This file
-├── get-workspace-id.sh         # Script to discover workspace IDs
-├── simple-create-board.sh      # Legacy board creation (kept for reference)
-├── generate-workspace-docs.sh  # Generate workspace documentation
-├── setup.sh                    # One-click repo setup
+monday-as-code/
+├── configs/
+│   ├── lab.env           # Lab workspace (9736208)
+│   ├── production.env    # Production workspace (519072) 
+│   └── crm.env          # CRM workspace (11007618)
 │
-├── configs/                    # Environment configurations
-│   ├── lab.env                 # Lab workspace settings
-│   └── production.env          # Production workspace settings
+├── modules/
+│   ├── lab/             # Lab workspace boards (38 boards exported)
+│   ├── production/      # Production workspace boards (TBD)
+│   ├── crm/            # CRM workspace boards (TBD)
+│   ├── connections/    # Cross-workspace connections (TBD)
+│   └── dashboards/     # Dashboard configurations (TBD)
 │
-├── resources/boards/           # JSON board definitions
-│   ├── dev-tasks.json          # Development tasks board
-│   ├── bug-tracker.json        # Bug tracking board
-│   ├── project-planning.json   # Project planning board
-│   ├── sales-pipeline.json     # Sales CRM board
-│   └── content-calendar.json   # Content marketing board
-│
-├── scripts/                    # Deployment scripts
-│   ├── monday-api.sh           # Monday.com API library functions
-│   └── deploy.sh               # Main deployment script (Terraform-like)
-│
-├── logs/                       # Deployment logs (auto-generated)
-│   └── deploy-YYYYMMDD.log     # Daily deployment logs
-│
-└── docs/
-    └── workspaces.md           # Generated workspace documentation
+├── discovery/          # API discovery outputs
+├── state/             # State tracking per environment
+├── exported_configs/  # Exported board configurations
+└── scripts/
+    ├── discover-monday.sh
+    ├── state-manager.sh
+    └── deploy.sh
 ```
 
-## 🚀 **How to Use Monday as Code**
+## 🔍 **Discovery System - Complete**
 
-### **Quick Start**
+### **Workspace Discovery**
+```bash
+# Discovered three key workspaces
+Lab:        9736208  # 38 boards exported ✅
+Production: 519072   # Ready for export
+CRM:        11007618 # Ready for export
+```
+
+### **Board Export**
+```bash
+# Export boards from each workspace
+./scripts/discover-monday.sh export-boards --workspace-id 9736208   # ✅ Done
+./scripts/discover-monday.sh export-boards --workspace-id 519072    # Next
+./scripts/discover-monday.sh export-boards --workspace-id 11007618  # Next
+```
+
+## 🔗 **Next Phase: Connection Mapping Strategy**
+
+### **Connection Discovery Plan**
+1. **Start from CRM** - Customer data is the source of truth
+2. **Trace connections** - CRM → connected boards → boards connected to those
+3. **Build connection graph** - Visual diagram of workspace relationships
+4. **Classify boards**:
+   - **Connected** = Active (part of workflows)
+   - **Disconnected** = Archive candidates
+   - **Deprecated** = Special handling needed
+
+### **Board Cleanup Strategy**
+```bash
+# Future commands (to be built)
+./scripts/analyze-connections.sh --start-from crm
+./scripts/map-board-graph.sh --export-diagram
+./scripts/classify-boards.sh --identify-orphans
+./scripts/archive-manager.sh --archive-unused --with-restore
+```
+
+## 🚀 **Deployment Commands (Working)**
 
 ```bash
-# 1. Set your API token
-export MONDAY_API_TOKEN='your_token_here'
-
-# 2. Preview changes (read-only, safe)
-./scripts/deploy.sh plan --env lab
-
-# 3. Deploy resources
+# Environment-specific deployment
 ./scripts/deploy.sh apply --env lab
+./scripts/deploy.sh apply --env production  
+./scripts/deploy.sh apply --env crm
 
-# 4. Test idempotency (should skip existing)
-./scripts/deploy.sh apply --env lab
+# State management
+./scripts/state-manager.sh refresh --env lab
+./scripts/state-manager.sh show --env lab
+
+# Discovery
+./scripts/discover-monday.sh scan-workspace --workspace-id 9736208
+./scripts/discover-monday.sh export-boards --workspace-id 9736208
 ```
 
-### **Adding New Boards**
+## 💡 **Key Insights from Phase 1**
 
-Create JSON files in `resources/boards/`:
+### **Workspace Architecture**
+- **Three core environments** mapped to actual Monday.com workspaces
+- **Modular approach** enables team ownership (Lab team, Operations team, Sales team)
+- **Cross-workspace connections** require special handling module
 
-```json
-{
-  "resource_type": "board",
-  "name": "my-board",
-  "spec": {
-    "board_name": "My Board",
-    "board_kind": "public",
-    "description": "Board description",
-    "workspace_id": "${WORKSPACE_ID}",
-    "columns": [
-      {"title": "Task", "type": "name"},
-      {"title": "Status", "type": "status"},
-      {"title": "Due Date", "type": "date"},
-      {"title": "Assignee", "type": "people"}
-    ]
-  }
-}
-```
+### **Board Management Scale**
+- **38 boards in Lab alone** - significant cleanup opportunity
+- **Many test/experimental boards** - candidates for archival
+- **Connection-driven approach** - only keep boards that are part of active workflows
 
-### **Environment Management**
+### **API Discovery Learnings**
+- **Rate limits** require careful sequencing (solved)
+- **Hidden workspaces** exist that don't show in general queries (solved)
+- **JSON export** enables version control and deployment (working)
 
-```bash
-# Lab environment (testing)
-./scripts/deploy.sh plan --env lab
-./scripts/deploy.sh apply --env lab
+## 🎯 **Immediate Next Steps**
 
-# Production environment (with confirmations)
-./scripts/deploy.sh plan --env production
-./scripts/deploy.sh apply --env production
-```
-
-## 🎯 **Current Focus - Milestone 4**
-
-### **Connected Board Ecosystems** ⭐ **NEXT PRIORITY**
-
-Building systems of interconnected boards that work together:
-
-1. **Multi-Board Deployments** - Deploy complete project workflows
-2. **Board Dependencies** - Define relationships between boards
-3. **Cross-Board Automation** - Connect boards with automations
-4. **Workspace Templates** - Pre-configured workspace setups
-5. **Board Collections** - Organize related boards together
-
-**Why this next?**
-- Creates complete project management ecosystems
-- Demonstrates enterprise-scale Monday.com management
-- Enables complex workflow automation
-- Shows the true power of Infrastructure as Code for Monday.com
-
-### **Target Connected Board System**
-```bash
-# Deploy an entire project management ecosystem
-./scripts/deploy.sh apply --env lab --collection project-management
-
-# This creates:
-# - Project Planning board (high-level strategy)
-# - Development Tasks board (detailed execution)
-# - Bug Tracker board (issue management)
-# - Sprint Planning board (agile workflows)
-# - All connected with automations and dependencies
-```
+1. **Complete board exports** - Production + CRM workspaces
+2. **Build connection mapper** - Start from CRM, trace all connections
+3. **Generate connection diagram** - Visual map of board relationships  
+4. **Identify cleanup candidates** - Disconnected/unused boards
+5. **Design archival system** - Safe cleanup with restore capability
 
 ## 🧰 **Technical Foundation**
 
-### **Dependencies**
-- `curl` - HTTP requests to Monday.com API
-- `jq` - JSON parsing and manipulation
-- `bash` - Shell scripting (no Node.js required!)
+### **Proven Stack**
+- `curl` + `jq` - Monday.com API integration
+- JSON configs - Deployable board definitions
+- Bash scripts - Cross-platform automation
+- State files - Change tracking and planning
 
-### **API Integration**
+### **API Integration** 
 - **Endpoint**: `https://api.monday.com/v2`
-- **Protocol**: GraphQL over HTTP POST
-- **Authentication**: Bearer token in Authorization header
-- **API Version**: `2023-10` (specified in headers)
-
-### **Proven Column Types**
-Based on successful production testing:
-- `name` - Default name column (auto-created)
-- `status` - Status/Priority columns
-- `date` - Date picker columns
-- `people` - People assignment columns  
-- `numbers` - Numeric value columns
-- `tags` - Tag selection columns
-- `long_text` - Text area columns
-
-## 🔥 **Why This Matters**
-
-Monday as Code is becoming a significant open-source project because:
-
-1. **✅ No competition**: First "Monday.com as Code" tool
-2. **✅ Large market**: 180k+ teams use Monday.com globally  
-3. **✅ Enterprise need**: Large organizations struggle with Monday.com consistency
-4. **✅ DevOps trend**: Everything-as-Code is the industry direction
-5. **✅ Proven foundation**: Complete API integration and deployment system working
-6. **✅ Extensible**: Ready to grow to manage views, automations, integrations
-
-## 📞 **Current Status Summary**
-
-**✅ What's working perfectly:**
-- Complete Infrastructure as Code system for Monday.com
-- JSON resource definitions with environment variables
-- Terraform-like plan/apply workflow
-- Environment separation (lab/production)
-- Idempotent deployments
-- All major column types working in production
-- Error handling and validation
-- Deployment logging
-
-**🎯 Ready for next iteration:**
-- Core IaC platform is rock solid  
-- JSON-based resource management proven
-- Lab environment fully tested and operational
-- Production environment configured and ready
-- Development workflow established
-
-**🚀 Next milestone:** Connected board ecosystems and multi-board deployments, completing the vision of full workspace automation through Infrastructure as Code.
+- **Rate limiting**: Built-in delays and error handling
+- **Cross-workspace**: Supports boards across multiple workspaces
+- **GraphQL**: Efficient data retrieval
 
 ---
 
-*Monday as Code - Making Monday.com workspace management as powerful as `terraform apply`* 🚀
+*Monday as Code - From discovery to deployment to cleanup management* 🚀
+
+**Current Phase**: Connection mapping and board lifecycle management
+**Vision**: Clean, connected, code-managed Monday.com infrastructure
