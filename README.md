@@ -1,143 +1,196 @@
 # Monday as Code 🚀
 
-> Infrastructure as Code for Monday.com - Workspace management, board discovery, and connection mapping
+> Infrastructure as Code for Monday.com - Workspace management, board discovery, and systematic cleanup
 
-## 🎯 **Current Status - Phase 2: Connection Discovery**
+## 🎯 **Current Status - Phase 2B: State Management & Cleanup Implementation**
 
-### **✅ Completed - Infrastructure Discovery & State Capture**
-- [x] **Workspace-based architecture** - Lab, Production, CRM environments
-- [x] **Complete state discovery** - 38 boards exported from Lab workspace
-- [x] **JSON-based board definitions** with deployable configurations
-- [x] **State management system** - tracks boards across workspaces
-- [x] **Rate-limit safe discovery** - handles Monday.com API constraints
-- [x] **Modular repository structure** - organized by workspace + cross-cutting concerns
+### **✅ Completed - Phase 1 & 2A**
+- [x] **Infrastructure Discovery** - Can export Monday.com boards to JSON configs
+- [x] **Connection Analysis** - Successfully analyzed 82 boards in Lab workspace
+- [x] **Clear Insights** - Identified 29 connected vs 53 orphaned boards
+- [x] **State Framework** - Basic state management scripts created
 
-### **🔥 Current Focus - Connection Mapping & Board Cleanup**
+### **🔥 Current Focus - Phase 2B: Board Cleanup System**
 
-**Goal**: Create a complete map of board connections starting from CRM, identify unused boards for archival.
+**Goal**: Build safe, reversible cleanup system to reduce Lab workspace from 82 boards to ~35 boards
+
+## 📊 **Discovery Results - Lab Workspace Analysis**
+
+**Lab Workspace (ID: 9736208):**
+- **82 total boards** discovered (much more than expected!)
+- **29 connected boards** (35%) - Core business workflows  
+- **53 orphaned boards** (65%) - Major cleanup opportunity
+
+### **Core Workflow Boards (Keep These)**
+| Board | Connections | Role |
+|-------|-------------|------|
+| Development | 18 | 🏆 Most connected - Core operations |
+| Accounts | 14 | 🏢 CRM hub |
+| Prod Deals | 10 | 💰 Sales pipeline |
+| Production | 10 | 🏭 Manufacturing |
+| Projects | 9 | 📋 Project management |
+
+### **Cleanup Candidates (53 boards)**
+- **Immediate safe archive**: Meeting boards, duplicates, test boards (~15 boards)
+- **Review required**: "Purchasing (deprecated)" still has 4 connections
+- **Bulk cleanup**: 40+ orphaned "Subitems of..." boards (auto-generated)
 
 ## 📁 **Repository Structure**
 
 ```
 monday-as-code/
 ├── configs/
-│   ├── lab.env           # Lab workspace (9736208)
-│   ├── production.env    # Production workspace (519072) 
+│   ├── lab.env           # Lab workspace (9736208) ✅
+│   ├── production.env    # Production workspace (519072)
 │   └── crm.env          # CRM workspace (11007618)
 │
 ├── modules/
-│   ├── lab/             # Lab workspace boards (38 boards exported)
-│   ├── production/      # Production workspace boards (TBD)
-│   ├── crm/            # CRM workspace boards (TBD)
-│   ├── connections/    # Cross-workspace connections (TBD)
-│   └── dashboards/     # Dashboard configurations (TBD)
+│   ├── lab/boards/      # 82 Lab boards exported ✅
+│   ├── production/      # (to be exported)
+│   └── crm/            # (to be exported)
 │
-├── discovery/          # API discovery outputs
-├── state/             # State tracking per environment
-├── exported_configs/  # Exported board configurations
-└── scripts/
-    ├── discover-monday.sh
-    ├── state-manager.sh
-    └── deploy.sh
+├── scripts/
+│   ├── discover-monday.sh     # Board export (working) ✅
+│   ├── simple-analyzer.sh     # Connection analysis (working) ✅
+│   ├── manage-state.sh        # State management (created, needs testing)
+│   └── monday-api.sh          # API helpers (working) ✅
+│
+├── analysis/
+│   └── simple/               # Connection analysis results ✅
+├── state/                    # State management (current/desired/plans)
+├── reports/                  # Generated markdown reports
+└── archives/                 # Board backups (for restore capability)
 ```
 
-## 🔍 **Discovery System - Complete**
+## 🚀 **Quick Start - Current Working Commands**
 
-### **Workspace Discovery**
+### **Connection Analysis** (Working)
 ```bash
-# Discovered three key workspaces
-Lab:        9736208  # 38 boards exported ✅
-Production: 519072   # Ready for export
-CRM:        11007618 # Ready for export
+# Analyze board connections in Lab workspace
+./scripts/simple-analyzer.sh
+
+# View results
+cat analysis/simple/lab_analysis.json
 ```
 
-### **Board Export**
+### **State Management** (Needs Testing)
 ```bash
-# Export boards from each workspace
-./scripts/discover-monday.sh export-boards --workspace-id 9736208   # ✅ Done
-./scripts/discover-monday.sh export-boards --workspace-id 519072    # Next
-./scripts/discover-monday.sh export-boards --workspace-id 11007618  # Next
+# Capture current state
+./scripts/manage-state.sh capture-current
+
+# Show current status
+./scripts/manage-state.sh show-current
+
+# Create desired state for cleanup planning
+./scripts/manage-state.sh create-desired --workspace lab
+
+# Compare current vs desired
+./scripts/manage-state.sh compare
 ```
 
-## 🔗 **Next Phase: Connection Mapping Strategy**
-
-### **Connection Discovery Plan**
-1. **Start from CRM** - Customer data is the source of truth
-2. **Trace connections** - CRM → connected boards → boards connected to those
-3. **Build connection graph** - Visual diagram of workspace relationships
-4. **Classify boards**:
-   - **Connected** = Active (part of workflows)
-   - **Disconnected** = Archive candidates
-   - **Deprecated** = Special handling needed
-
-### **Board Cleanup Strategy**
+### **Board Export** (Rate Limited - Use Carefully)
 ```bash
-# Future commands (to be built)
-./scripts/analyze-connections.sh --start-from crm
-./scripts/map-board-graph.sh --export-diagram
-./scripts/classify-boards.sh --identify-orphans
-./scripts/archive-manager.sh --archive-unused --with-restore
+# Export other workspaces (with caution - rate limits)
+./scripts/discover-monday.sh export-boards --workspace-id 519072    # Production
+./scripts/discover-monday.sh export-boards --workspace-id 11007618  # CRM
 ```
 
-## 🚀 **Deployment Commands (Working)**
+## 📋 **Phase 2B Roadmap - Board Cleanup System**
 
+### **Step 1: State Management** (In Progress)
+- [x] Create state management framework
+- [ ] Test state capture and tracking
+- [ ] Generate cleanup action plans
+- [ ] Track progress over time
+
+### **Step 2: Safe Archival System** (Next)
+- [ ] Board backup system (complete structure + data)
+- [ ] Safe archive process (rename with [ARCHIVED] prefix)
+- [ ] Restore capability for archived boards
+- [ ] Audit trail of all cleanup actions
+
+### **Step 3: Cleanup Workflow** (Priority Order)
+- [ ] **Phase 1**: Archive safe candidates (meetings, duplicates) - ~15 boards
+- [ ] **Phase 2**: Handle "Purchasing (deprecated)" with connections
+- [ ] **Phase 3**: Bulk archive orphaned subitem boards - ~40 boards
+- [ ] **Phase 4**: Review remaining orphaned boards
+
+### **Step 4: Cross-Workspace Analysis** (Future)
+- [ ] Export Production workspace (with rate limiting)
+- [ ] Export CRM workspace (with rate limiting)  
+- [ ] Map cross-workspace connections
+- [ ] Full ecosystem cleanup strategy
+
+## 🎯 **Success Metrics**
+
+**Immediate Goal (Lab Workspace)**:
+- **From**: 82 boards (29 connected, 53 orphaned)
+- **To**: ~35 boards (29+ connected, <5 orphaned)
+- **Cleanup**: 60-70% reduction in board count
+- **Safety**: 100% restore capability for archived boards
+
+## ⚡ **Getting Started**
+
+### **Prerequisites**
 ```bash
-# Environment-specific deployment
-./scripts/deploy.sh apply --env lab
-./scripts/deploy.sh apply --env production  
-./scripts/deploy.sh apply --env crm
+# Required tools
+brew install jq curl  # macOS
+sudo apt-get install jq curl  # Ubuntu
 
-# State management
-./scripts/state-manager.sh refresh --env lab
-./scripts/state-manager.sh show --env lab
-
-# Discovery
-./scripts/discover-monday.sh scan-workspace --workspace-id 9736208
-./scripts/discover-monday.sh export-boards --workspace-id 9736208
+# Set API token
+export MONDAY_API_TOKEN='your_token_here'
 ```
 
-## 💡 **Key Insights from Phase 1**
+### **Test Current System**
+```bash
+# Test connection analysis (safe - no API calls)
+./scripts/simple-analyzer.sh
 
-### **Workspace Architecture**
-- **Three core environments** mapped to actual Monday.com workspaces
-- **Modular approach** enables team ownership (Lab team, Operations team, Sales team)
-- **Cross-workspace connections** require special handling module
+# Test state management (needs verification)
+./scripts/manage-state.sh capture-current
+./scripts/manage-state.sh show-current
+```
 
-### **Board Management Scale**
-- **38 boards in Lab alone** - significant cleanup opportunity
-- **Many test/experimental boards** - candidates for archival
-- **Connection-driven approach** - only keep boards that are part of active workflows
+## 📊 **Analysis Files Generated**
 
-### **API Discovery Learnings**
-- **Rate limits** require careful sequencing (solved)
-- **Hidden workspaces** exist that don't show in general queries (solved)
-- **JSON export** enables version control and deployment (working)
+### **Connection Analysis**
+- `analysis/simple/lab_analysis.json` - Raw analysis data
+- `reports/lab_connection_report.md` - Detailed markdown report
 
-## 🎯 **Immediate Next Steps**
+### **State Management**  
+- `state/current/latest.json` - Current infrastructure state
+- `state/desired/lab_desired_state.json` - Target cleanup goals
+- `state/plans/cleanup_action_plan_*.md` - Step-by-step cleanup plans
 
-1. **Complete board exports** - Production + CRM workspaces
-2. **Build connection mapper** - Start from CRM, trace all connections
-3. **Generate connection diagram** - Visual map of board relationships  
-4. **Identify cleanup candidates** - Disconnected/unused boards
-5. **Design archival system** - Safe cleanup with restore capability
+## 🛡️ **Safety Features**
 
-## 🧰 **Technical Foundation**
+### **Built-in Safeguards**
+- **No destructive operations** without explicit confirmation
+- **Complete backup** before any board changes
+- **Restore capability** for all archived boards
+- **Rate limiting** to avoid Monday.com API limits
+- **Dry-run mode** for all cleanup operations
 
-### **Proven Stack**
-- `curl` + `jq` - Monday.com API integration
-- JSON configs - Deployable board definitions
-- Bash scripts - Cross-platform automation
-- State files - Change tracking and planning
+### **Audit Trail**
+- All operations logged with timestamps
+- Board structure backups stored permanently  
+- Restore commands documented for each archived board
 
-### **API Integration** 
-- **Endpoint**: `https://api.monday.com/v2`
-- **Rate limiting**: Built-in delays and error handling
-- **Cross-workspace**: Supports boards across multiple workspaces
-- **GraphQL**: Efficient data retrieval
+## 🤝 **Contributing & Next Steps**
+
+**Current Development**: Phase 2B - State management and board cleanup implementation
+
+**How to Help**:
+1. Test state management scripts and report issues
+2. Help implement safe board archival system
+3. Build cleanup workflow with proper rate limiting
+4. Create visual dashboards for cleanup progress
+
+**Architecture**: Bash scripts + jq for JSON processing + Monday.com GraphQL API
 
 ---
 
-*Monday as Code - From discovery to deployment to cleanup management* 🚀
+**Phase 2B Focus**: Building safe, systematic board cleanup with full restore capability  
+**Vision**: Clean, organized Monday.com infrastructure managed as code
 
-**Current Phase**: Connection mapping and board lifecycle management
-**Vision**: Clean, connected, code-managed Monday.com infrastructure
+*Monday as Code - From discovery to cleanup to lifecycle management* 🚀
