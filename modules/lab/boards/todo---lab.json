@@ -1,0 +1,47 @@
+{
+  "resource_type": "board",
+  "name": "todo---lab",
+  "spec": {
+    "board_name": "TODO - Lab",
+    "board_kind": "share",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Relevant info",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Description",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Person I'm responding to",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Date Added",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      }
+    ]
+  }
+}

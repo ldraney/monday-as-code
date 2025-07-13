@@ -1,0 +1,52 @@
+{
+  "resource_type": "board",
+  "name": "test-board-from-code",
+  "spec": {
+    "board_name": "Test Board from Code",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Priority",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Due Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Assignee",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Progress",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Tags",
+        "type": "tags",
+        "description": null
+      },
+      {
+        "title": "Notes",
+        "type": "long_text",
+        "description": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "resource_type": "board",
+  "name": "production-calendar-2024",
+  "spec": {
+    "board_name": "Production Calendar 2024",
+    "board_kind": "private",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "MO",
+        "type": "checkbox",
+        "description": null
+      },
+      {
+        "title": "Product",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "QTY",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Purchase Order",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Ship/Produced Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Deliver By",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Packing List",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "InFlow input",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "BOL",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Invoice?",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Invoice File",
+        "type": "file",
+        "description": null
+      }
+    ]
+  }
+}

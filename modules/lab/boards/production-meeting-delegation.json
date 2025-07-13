@@ -1,0 +1,47 @@
+{
+  "resource_type": "board",
+  "name": "production-meeting-delegation",
+  "spec": {
+    "board_name": "Production Meeting Delegation",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Person",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Priority",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Text",
+        "type": "text",
+        "description": null
+      }
+    ]
+  }
+}

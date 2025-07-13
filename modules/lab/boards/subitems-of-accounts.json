@@ -1,0 +1,67 @@
+{
+  "resource_type": "board",
+  "name": "subitems-of-accounts",
+  "spec": {
+    "board_name": "Subitems of Accounts",
+    "board_kind": "share",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Owner",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Client Type",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Files & Links",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Priority",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Contacts",
+        "type": "board_relation",
+        "description": "This column is connected to the Contacts board. Connect as many contacts as needed to the account."
+      },
+      {
+        "title": "Prod Deals",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Prod Deals Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "PEL-Production",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Production Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "monday Doc v2",
+        "type": "direct_doc",
+        "description": null
+      }
+    ]
+  }
+}

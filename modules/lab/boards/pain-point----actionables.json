@@ -1,0 +1,32 @@
+{
+  "resource_type": "board",
+  "name": "pain-point----actionables",
+  "spec": {
+    "board_name": "Pain Point  - Actionables",
+    "board_kind": "public",
+    "description": "Actionables from the Pain Point Meeting",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "monday Doc",
+        "type": "doc",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Person",
+        "type": "people",
+        "description": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "resource_type": "board",
+  "name": "production--bulk-",
+  "spec": {
+    "board_name": "Production (Bulk)",
+    "board_kind": "private",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": ""
+      },
+      {
+        "title": "SP",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Units needed",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "kg",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Batch Code",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Person",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Inflow bulk MO",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Due Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "monday Doc v2",
+        "type": "direct_doc",
+        "description": null
+      }
+    ]
+  }
+}

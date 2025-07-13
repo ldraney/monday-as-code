@@ -1,0 +1,32 @@
+{
+  "resource_type": "board",
+  "name": "abamerica-pos",
+  "spec": {
+    "board_name": "AbAmerica POs",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "PO Items",
+        "type": "text",
+        "description": null
+      }
+    ]
+  }
+}

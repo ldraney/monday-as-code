@@ -1,0 +1,92 @@
+{
+  "resource_type": "board",
+  "name": "subitems-of-lab---purchasing",
+  "spec": {
+    "board_name": "Subitems of Lab - Purchasing",
+    "board_kind": "private",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Assigned",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Formula Name",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Manufacturing Order",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "PO in Inflow",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Qt Needed",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Qt Ordered",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Purchasing Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Vendor",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Ordered Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Arrival Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Tracking Number",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Tracking URL",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Carrier",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Order",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Order",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}

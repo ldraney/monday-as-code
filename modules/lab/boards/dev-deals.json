@@ -1,0 +1,117 @@
+{
+  "resource_type": "board",
+  "name": "dev-deals",
+  "spec": {
+    "board_name": "Dev Deals",
+    "board_kind": "share",
+    "description": "Learn how to use monday CRM: https://youtu.be/QjKcGGVPLVE",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Tasks",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Deal Type",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Stage",
+        "type": "status",
+        "description": ""
+      },
+      {
+        "title": "Iteration Number",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Contract",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Owner",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Development Ticket",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Lab Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Deal Value",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Contact(s)",
+        "type": "board_relation",
+        "description": "This column is connected to the Contacts board. You can choose an existing contact, or create a new contact here."
+      },
+      {
+        "title": "Accounts",
+        "type": "mirror",
+        "description": "This column is connected to the contact. "
+      },
+      {
+        "title": "Expected Close Date",
+        "type": "date",
+        "description": "Set the expected close date and track your forecasted revenue in the Sales Dashboard."
+      },
+      {
+        "title": "Close Probability",
+        "type": "numbers",
+        "description": "Set how likely it is to close the deal. This will impact the Forecast Value column. "
+      },
+      {
+        "title": "Forecast Value",
+        "type": "formula",
+        "description": "The forecast value is reached by multiplying the deal value and close probability. The forecast value column is available with the Pro plan."
+      },
+      {
+        "title": "Last interaction",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Quotes & Invoices",
+        "type": "unsupported",
+        "description": null
+      },
+      {
+        "title": "Deal creation date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Critical Comments",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Deal Type",
+        "type": "dropdown",
+        "description": null
+      },
+      {
+        "title": "link to Accounts",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}

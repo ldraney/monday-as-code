@@ -1,0 +1,52 @@
+{
+  "resource_type": "board",
+  "name": "project-requests---approvals",
+  "spec": {
+    "board_name": "Project Requests & Approvals",
+    "board_kind": "public",
+    "description": "Use this board to receive project requests via a form and manage the project approval process. \n\nHow it works: once the form is submitted, it will populate in the 'New requests' group. Once approved, a new item will be created in the 'Portfolio Management' board, which is linked to the project request.",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Initiator",
+        "type": "people",
+        "description": "The person who submitted the form"
+      },
+      {
+        "title": "Request Status",
+        "type": "status",
+        "description": "The status of the project request. When the status is changed, the request will automatically move to the correct group using automations"
+      },
+      {
+        "title": "Request Date",
+        "type": "date",
+        "description": "The date that the project was requested on. This is automatically populated using an automation"
+      },
+      {
+        "title": "Executive summary",
+        "type": "long_text",
+        "description": "This information is automatically populated when the form is filled out "
+      },
+      {
+        "title": "Anticipated Outcomes",
+        "type": "long_text",
+        "description": "This information is automatically populated when the form is filled out "
+      },
+      {
+        "title": "Recommendation",
+        "type": "long_text",
+        "description": "This information is automatically populated when the form is filled out "
+      },
+      {
+        "title": "Approved Budget",
+        "type": "numbers",
+        "description": "Add your project approved budget. You can change the currency from the column settings"
+      }
+    ]
+  }
+}

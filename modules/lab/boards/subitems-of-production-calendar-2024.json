@@ -1,0 +1,52 @@
+{
+  "resource_type": "board",
+  "name": "subitems-of-production-calendar-2024",
+  "spec": {
+    "board_name": "Subitems of Production Calendar 2024",
+    "board_kind": "private",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Amount",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Totals for Product",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Finish by....",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Files",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Invoice?",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Invoice File",
+        "type": "file",
+        "description": null
+      }
+    ]
+  }
+}

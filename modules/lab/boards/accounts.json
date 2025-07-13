@@ -1,0 +1,292 @@
+{
+  "resource_type": "board",
+  "name": "accounts",
+  "spec": {
+    "board_name": "Accounts",
+    "board_kind": "share",
+    "description": "",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Files & Links",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Priority",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Date Added",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Contacts",
+        "type": "board_relation",
+        "description": "This column is connected to the Contacts board. Connect as many contacts as needed to the account."
+      },
+      {
+        "title": "Description",
+        "type": "long_text",
+        "description": null
+      },
+      {
+        "title": "website / domain",
+        "type": "link",
+        "description": "Enter a domain to auto-enrich columns with data from Crunchbase. Enjoy 1000 free enrichments. Unlock more in the Crunchbase app."
+      },
+      {
+        "title": "No. of employees",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Industry",
+        "type": "dropdown",
+        "description": null
+      },
+      {
+        "title": "Headquarters location",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Company profile",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "PEL-Production",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Production Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "PEL - Shopify",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Shopify Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "PEL-Development",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Development Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Deals",
+        "type": "mirror",
+        "description": "This column presents all the deals associated with the account."
+      },
+      {
+        "title": "Client Type",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Last updated",
+        "type": "last_updated",
+        "description": null
+      },
+      {
+        "title": "Record Id",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Phone",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Annual Revenue",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Created By",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Modified By",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Modified Time",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Billing Street",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Billing City",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Billing State",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Billing Code",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Billing Country",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Shipping Street",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Shipping City",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Shipping State",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Shipping Code",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Shipping Country",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Last Activity Time",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Change Log Time",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Intstagram",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "TikTok",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Intake",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Contract",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Lab Notified",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Buisness Development Stage",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Product Development Stages",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "NDA",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Ticket Created",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "monday Doc v2",
+        "type": "direct_doc",
+        "description": null
+      },
+      {
+        "title": "Dev Deals",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Dev Deals Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Prod Deals",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Prod Deals Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Owner",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Projects",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Project Status",
+        "type": "mirror",
+        "description": null
+      }
+    ]
+  }
+}

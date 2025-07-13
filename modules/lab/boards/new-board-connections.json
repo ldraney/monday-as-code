@@ -1,0 +1,32 @@
+{
+  "resource_type": "board",
+  "name": "new-board-connections",
+  "spec": {
+    "board_name": "New Board Connections",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Person",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Date",
+        "type": "date",
+        "description": null
+      }
+    ]
+  }
+}

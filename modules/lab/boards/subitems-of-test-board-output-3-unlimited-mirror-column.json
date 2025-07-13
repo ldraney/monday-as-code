@@ -1,0 +1,37 @@
+{
+  "resource_type": "board",
+  "name": "subitems-of-test-board-output-3-unlimited-mirror-column",
+  "spec": {
+    "board_name": "Subitems of Test Board Output 3 Unlimited Mirror Column",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Owner",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Dropdown",
+        "type": "dropdown",
+        "description": null
+      }
+    ]
+  }
+}

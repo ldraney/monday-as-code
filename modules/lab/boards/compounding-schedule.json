@@ -1,0 +1,67 @@
+{
+  "resource_type": "board",
+  "name": "compounding-schedule",
+  "spec": {
+    "board_name": "Compounding Schedule",
+    "board_kind": "private",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Person",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "KG",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Stages",
+        "type": "status",
+        "description": ""
+      },
+      {
+        "title": "Inflow Mfg. Order Created",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Actual Kg",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Due Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Batch Records",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Completion Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "NOTES",
+        "type": "text",
+        "description": null
+      }
+    ]
+  }
+}

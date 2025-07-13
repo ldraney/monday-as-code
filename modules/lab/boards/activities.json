@@ -1,0 +1,107 @@
+{
+  "resource_type": "board",
+  "name": "activities",
+  "spec": {
+    "board_name": "Activities",
+    "board_kind": "public",
+    "description": "The activities board shows all the activities that are added using the Emails & Activities in the page.\nEvery time you add an activity through Emails & Activities, a new activity will be added to this board.",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Reminder",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Activity Type",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Owner",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Start time",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "End time",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Contact Name",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Related To",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Related to Contact Name",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Related item Account",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Priority",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Created By",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Description",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Closed Time",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Last Activity Time",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Modified Time",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Created Time",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Modified By",
+        "type": "text",
+        "description": null
+      }
+    ]
+  }
+}

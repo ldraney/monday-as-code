@@ -1,0 +1,37 @@
+{
+  "resource_type": "board",
+  "name": "subitems-of-duplicate-of-compounding-schedule",
+  "spec": {
+    "board_name": "Subitems of Duplicate of Compounding Schedule",
+    "board_kind": "private",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Owner",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "KG",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Date",
+        "type": "date",
+        "description": null
+      }
+    ]
+  }
+}

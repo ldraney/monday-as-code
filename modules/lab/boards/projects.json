@@ -1,0 +1,92 @@
+{
+  "resource_type": "board",
+  "name": "projects",
+  "spec": {
+    "board_name": "Projects",
+    "board_kind": "share",
+    "description": "The essence of this board is to provide a high-level overview of your project. This is the place to plan and track your progress. \nFor more information and a full explanation of how to use this template check out this video:\n https://www.youtube.com/watch?v=ug5TyvMd-3Y&feature=youtu.be",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Brief and AC",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Owner",
+        "type": "people",
+        "description": "The activity owner"
+      },
+      {
+        "title": "Priority",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "link to Accounts",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Timeline",
+        "type": "timeline",
+        "description": "The column shows a timeframe for  each activity. You can see a summary of these activities at the bottom of each group. "
+      },
+      {
+        "title": "Prod Deals",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Prod Deals Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "PEL-Production",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Production Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Dev Deals",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Dev Deals Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "PEL-Development",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Dev Status",
+        "type": "mirror",
+        "description": null
+      }
+    ]
+  }
+}

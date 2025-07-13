@@ -1,0 +1,72 @@
+{
+  "resource_type": "board",
+  "name": "pel---shopify",
+  "spec": {
+    "board_name": "PEL - Shopify",
+    "board_kind": "share",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Ship By",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "SO",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Person",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "PEL - Batch Traceability",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Batch Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Timeline",
+        "type": "timeline",
+        "description": null
+      },
+      {
+        "title": "Ticket Type",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "link to Prod Deals",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "link to Accounts",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}

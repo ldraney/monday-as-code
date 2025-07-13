@@ -1,0 +1,22 @@
+{
+  "resource_type": "board",
+  "name": "subitems-of-purchasing--deprecated-",
+  "spec": {
+    "board_name": "Subitems of Purchasing (deprecated)",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "amount (kg)",
+        "type": "numbers",
+        "description": null
+      }
+    ]
+  }
+}

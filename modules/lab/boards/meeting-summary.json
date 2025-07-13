@@ -1,0 +1,22 @@
+{
+  "resource_type": "board",
+  "name": "meeting-summary",
+  "spec": {
+    "board_name": "Meeting summary",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Files",
+        "type": "file",
+        "description": null
+      }
+    ]
+  }
+}

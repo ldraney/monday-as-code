@@ -1,0 +1,67 @@
+{
+  "resource_type": "board",
+  "name": "test-board-output-2-unlimited-mirror-column",
+  "spec": {
+    "board_name": "Test Board Output 2 Unlimited Mirror Column",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Test Board Output 1 Unlimited Mirror Column",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Mirror 2 STATUS",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Mirror 2 DATE",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Mirror 2 TIMELINE",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Timeline",
+        "type": "timeline",
+        "description": null
+      },
+      {
+        "title": "Dropdown",
+        "type": "dropdown",
+        "description": null
+      },
+      {
+        "title": "Text",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Numbers",
+        "type": "numbers",
+        "description": null
+      }
+    ]
+  }
+}

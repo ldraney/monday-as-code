@@ -1,0 +1,32 @@
+{
+  "resource_type": "board",
+  "name": "subitems-of-single-project",
+  "spec": {
+    "board_name": "Subitems of Single Project",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Owner",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Due Date",
+        "type": "date",
+        "description": null
+      }
+    ]
+  }
+}

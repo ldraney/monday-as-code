@@ -1,0 +1,57 @@
+{
+  "resource_type": "board",
+  "name": "purchasing--deprecated-",
+  "spec": {
+    "board_name": "Purchasing (deprecated)",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "EPO inflow link",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Person",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "link to Production",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Vendor Accounts",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Contacts",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Mirror",
+        "type": "mirror",
+        "description": null
+      }
+    ]
+  }
+}

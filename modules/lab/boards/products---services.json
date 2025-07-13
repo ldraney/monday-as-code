@@ -1,0 +1,52 @@
+{
+  "resource_type": "board",
+  "name": "products---services",
+  "spec": {
+    "board_name": "Products & Services",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Description",
+        "type": "long_text",
+        "description": null
+      },
+      {
+        "title": "Price",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "SKU",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Type",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "account",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "link to Bulk Documentation",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}

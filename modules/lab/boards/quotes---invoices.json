@@ -1,0 +1,52 @@
+{
+  "resource_type": "board",
+  "name": "quotes---invoices",
+  "spec": {
+    "board_name": "Quotes & Invoices",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Type",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Amount",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Recipient",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "File",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Issue date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Owner",
+        "type": "creation_log",
+        "description": null
+      }
+    ]
+  }
+}

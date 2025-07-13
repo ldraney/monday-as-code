@@ -1,0 +1,92 @@
+{
+  "resource_type": "board",
+  "name": "subitems-of-production-schedule-2025",
+  "spec": {
+    "board_name": "Subitems of Production Schedule 2025",
+    "board_kind": "private",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Quantity",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Note",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Timeline",
+        "type": "timeline",
+        "description": null
+      },
+      {
+        "title": "QTY Expected",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Actual",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "FILL LINE",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Customer",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Link",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Expiration Date Printed",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "People Needed",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Note",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Production Calendar 2023",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Mirror",
+        "type": "mirror",
+        "description": null
+      }
+    ]
+  }
+}

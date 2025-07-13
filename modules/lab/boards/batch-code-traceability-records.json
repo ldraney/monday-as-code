@@ -1,0 +1,57 @@
+{
+  "resource_type": "board",
+  "name": "batch-code-traceability-records",
+  "spec": {
+    "board_name": "Batch Code Traceability Records",
+    "board_kind": "private",
+    "description": "https://forms.monday.com/forms/c1b9b3ae44e4cb5caf31a1ab1f409a07?r=use1",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Client",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Product Name",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Date Batched",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Batch Record",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "COA",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Retention Sample",
+        "type": "checkbox",
+        "description": null
+      },
+      {
+        "title": "link to MOs - Line",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "resource_type": "board",
+  "name": "bulk-documentation--finalization-",
+  "spec": {
+    "board_name": "Bulk Documentation (Finalization)",
+    "board_kind": "share",
+    "description": "https://forms.monday.com/forms/c1b9b3ae44e4cb5caf31a1ab1f409a07?r=use1",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Product Type",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Products & Services",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Mirror",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Formula ID",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Ingredient List",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Formula formatted?",
+        "type": "checkbox",
+        "description": null
+      },
+      {
+        "title": "Inflow Bulk Product Page",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "BoM Cost",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Pricing sheet link",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Shopify Product Page",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "SKUs",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Stock Photos",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Shopify Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Approved Actives",
+        "type": "dropdown",
+        "description": null
+      },
+      {
+        "title": "Bulk In stock?",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Restock MO (if needed)",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Batch Record Template",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "COA template",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Short-term Stability Passed?",
+        "type": "checkbox",
+        "description": null
+      },
+      {
+        "title": "Microtest CTLA results",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Intensive stability results",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "PEL - Batch Traceability",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Batches - Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Has 2oz sample size?",
+        "type": "checkbox",
+        "description": null
+      },
+      {
+        "title": "2oz product link",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "link to Production",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "link to Development",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "link to Bulk Batch Traceability",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "link to Prod Deals",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Actives",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Files",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Formula",
+        "type": "file",
+        "description": null
+      }
+    ]
+  }
+}

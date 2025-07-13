@@ -1,0 +1,37 @@
+{
+  "resource_type": "board",
+  "name": "earth-harbor-finalized-batch-records",
+  "spec": {
+    "board_name": "Earth Harbor Finalized Batch Records",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Person",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "the batch record",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Final Approved BR",
+        "type": "file",
+        "description": null
+      }
+    ]
+  }
+}

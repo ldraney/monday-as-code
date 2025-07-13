@@ -1,0 +1,162 @@
+{
+  "resource_type": "board",
+  "name": "development",
+  "spec": {
+    "board_name": "Development",
+    "board_kind": "share",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Ticket Type",
+        "type": "dropdown",
+        "description": null
+      },
+      {
+        "title": "Intake Documents",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Ingredients to Order",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "EPOs - Ingredients",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Ingredients Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "EPOs - Materials & Benchmarks",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Materials Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Person",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Iteration Number",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "EPO stage",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "SP",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Sprint",
+        "type": "dropdown",
+        "description": null
+      },
+      {
+        "title": "Inflow - Bill of Materials",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Development Google Sheet",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Pricing Sheet",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "PEL - Finalization",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Batch Record Template",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "COA Template",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "MO bulk Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Dev Deals",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Mirror",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Mirror 1",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "MO Board - Bulk",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Prod Deals",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "link to Contacts",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "link to Blockers",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "link to EPOs - Ingredients",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}

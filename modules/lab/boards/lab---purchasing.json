@@ -1,0 +1,157 @@
+{
+  "resource_type": "board",
+  "name": "lab---purchasing",
+  "spec": {
+    "board_name": "Lab - Purchasing",
+    "board_kind": "private",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Project Name",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Formula Name",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Manufacturing Order",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "PO in Inflow",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Qt Needed",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Qt Ordered",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Purchasing Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Vendor",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Arrival date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Warehouse Location",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Ordered Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Exp. ship date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Expected Arrival",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Tracking Number",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Tracking URL",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Carrier",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Packing list",
+        "type": "checkbox",
+        "description": null
+      },
+      {
+        "title": "BOL/Packing list",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Product Spec Sheet",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Safety Data Sheets",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Certificate Of Analysis (COA)",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Order",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "link to PEL - Shopify",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "link to PEL - Batch Traceability",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Vendors",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Mirror",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "link to PEL-Production",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}

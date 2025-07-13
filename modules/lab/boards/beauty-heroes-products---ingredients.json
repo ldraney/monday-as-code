@@ -1,0 +1,42 @@
+{
+  "resource_type": "board",
+  "name": "beauty-heroes-products---ingredients",
+  "spec": {
+    "board_name": "Beauty Heroes Products - Ingredients",
+    "board_kind": "share",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "INCI",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Percentage",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Vendor",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Product Spec Sheet",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Safety Data Sheet",
+        "type": "file",
+        "description": null
+      }
+    ]
+  }
+}

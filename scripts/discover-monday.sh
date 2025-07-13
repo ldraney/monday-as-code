@@ -31,6 +31,7 @@ show_usage() {
   echo "Commands:"
   echo "  scan-all           Discover all workspaces, boards, and connections"
   echo "  scan-workspace     Discover specific workspace"
+  echo "  scan-sample        Discover first 5 workspaces (rate limit safe)"
   echo "  map-connections    Analyze cross-board connections"
   echo "  generate-state     Generate state files for existing infrastructure"
   echo "  export-boards      Export board configurations as JSON"
@@ -116,9 +117,13 @@ discover_workspaces() {
 discover_workspace_boards() {
   local workspace_id="$1"
   
-  echo -e "${BLUE}🔍 Discovering boards in workspace $workspace_id...${NC}"
+  echo -e "${BLUE}🔍 Discovering boards in workspace $workspace_id...${NC}" >&2
   
-  local query='{"query": "query($workspace_id: [ID!]) { boards(workspace_ids: $workspace_id, limit: 100) { id name description board_kind state updated_at columns { id title type description settings_str } groups { id title color } views { id name type settings_str } subscribers { id name email } } }", "variables": {"workspace_id": ["'$workspace_id'"]}}'
+  # Simplified query to reduce complexity
+  local query='{"query": "query($workspace_id: [ID!]) { boards(workspace_ids: $workspace_id, limit: 50) { id name description board_kind state updated_at columns { id title type description } } }", "variables": {"workspace_id": ["'$workspace_id'"]}}'
+
+  # Add rate limiting - wait 2 seconds between requests
+  sleep 2
 
   local response=$(curl -s \
     -H "Authorization: $MONDAY_API_TOKEN" \
@@ -127,26 +132,33 @@ discover_workspace_boards() {
     -d "$query" \
     https://api.monday.com/v2)
 
-  # Check for errors
+  # Check for rate limit errors
   local errors=$(echo "$response" | jq -r '.errors // empty' 2>/dev/null)
   if [[ -n "$errors" ]]; then
-    echo -e "${RED}❌ API request failed for workspace $workspace_id!${NC}"
-    echo "Errors: $errors"
-    return 1
+    local error_message=$(echo "$errors" | jq -r '.[0].message // empty')
+    if [[ "$error_message" =~ "Complexity budget exhausted" ]]; then
+      echo -e "${YELLOW}⚠️  Rate limit hit for workspace $workspace_id. Skipping for now.${NC}" >&2
+      echo -e "${YELLOW}   Try running discovery on individual workspaces later.${NC}" >&2
+      return 0
+    else
+      echo -e "${RED}❌ API request failed for workspace $workspace_id!${NC}" >&2
+      echo "Errors: $errors" >&2
+      return 1
+    fi
   fi
 
   # Check if response is valid JSON
   if ! echo "$response" | jq empty 2>/dev/null; then
-    echo -e "${RED}❌ Invalid JSON response for workspace $workspace_id!${NC}"
-    echo "Response: $response"
+    echo -e "${RED}❌ Invalid JSON response for workspace $workspace_id!${NC}" >&2
+    echo "Response: $response" >&2
     return 1
   fi
 
-  # Save full board data
+  # Save simplified board data
   echo "$response" | jq '.data.boards' > "$PROJECT_ROOT/discovery/workspace_${workspace_id}_boards.json"
   
   local board_count=$(echo "$response" | jq '.data.boards | length')
-  echo -e "${GREEN}✅ Found $board_count boards in workspace $workspace_id${NC}"
+  echo -e "${GREEN}✅ Found $board_count boards in workspace $workspace_id${NC}" >&2
   
   echo "$response"
 }
@@ -277,7 +289,7 @@ generate_state_files() {
 export_boards_as_configs() {
   local workspace_id="$1"
   
-  echo -e "${BLUE}📤 Exporting boards as deployable configs...${NC}"
+  echo -e "${BLUE}📤 Exporting boards as deployable configs...${NC}" >&2
   
   local export_dir="$PROJECT_ROOT/exported_configs"
   mkdir -p "$export_dir/boards"
@@ -285,13 +297,16 @@ export_boards_as_configs() {
   if [[ -n "$workspace_id" ]]; then
     local workspace_file="$PROJECT_ROOT/discovery/workspace_${workspace_id}_boards.json"
     if [[ ! -f "$workspace_file" ]]; then
-      echo -e "${RED}❌ No discovery data for workspace $workspace_id. Run scan-workspace first.${NC}"
+      echo -e "${RED}❌ No discovery data for workspace $workspace_id. Run scan-workspace first.${NC}" >&2
       exit 1
     fi
     
-    # Convert discovered boards to deployable configs
-    jq -r '.[] | 
-      {
+    # Process each board individually
+    local board_count=$(jq '. | length' "$workspace_file")
+    echo -e "${BLUE}Processing $board_count boards from workspace $workspace_id...${NC}" >&2
+    
+    for ((i=0; i<board_count; i++)); do
+      local board_config=$(jq --argjson index $i '.[$index] | {
         resource_type: "board",
         name: (.name | gsub("[^a-zA-Z0-9-]"; "-") | ascii_downcase),
         spec: {
@@ -300,22 +315,21 @@ export_boards_as_configs() {
           description: .description,
           workspace_id: "${WORKSPACE_ID}",
           columns: [
-            .columns[] | 
-            {
+            .columns[] | {
               title: .title,
               type: .type,
               description: .description
             }
           ]
         }
-      }
-    ' "$workspace_file" | jq -s '.[]' | while IFS= read -r board_config; do
+      }' "$workspace_file")
+      
       local board_name=$(echo "$board_config" | jq -r '.name')
       echo "$board_config" | jq '.' > "$export_dir/boards/${board_name}.json"
-      echo -e "${GREEN}✅ Exported $board_name.json${NC}"
+      echo -e "${GREEN}✅ Exported $board_name.json${NC}" >&2
     done
   else
-    echo -e "${YELLOW}⚠️  No workspace specified. Use --workspace-id to export specific workspace${NC}"
+    echo -e "${YELLOW}⚠️  No workspace specified. Use --workspace-id to export specific workspace${NC}" >&2
   fi
 }
 
@@ -364,12 +378,55 @@ main() {
   # Parse command and options
   while [[ $# -gt 0 ]]; do
     case $1 in
-      scan-all|scan-workspace|map-connections|generate-state|export-boards)
+      scan-all|scan-workspace|scan-sample|map-connections|generate-state|export-boards)
         command="$1"
         shift
         ;;
+      
+    scan-sample)
+      echo -e "${BOLD}🔍 Scanning sample Monday.com infrastructure (first 5 workspaces)...${NC}"
+      echo ""
+      
+      # Discover workspaces
+      echo -e "${BLUE}Step 1: Discovering workspaces...${NC}"
+      local workspaces_response=$(discover_workspaces)
+      
+      # Process only first 5 workspaces
+      local workspace_count=$(echo "$workspaces_response" | jq '.data.workspaces | length' 2>/dev/null || echo "0")
+      echo -e "${BLUE}Found $workspace_count workspaces, processing first 5...${NC}"
+      
+      if [[ "$workspace_count" -gt 0 ]]; then
+        echo -e "${BLUE}Step 2: Discovering boards in sample workspaces...${NC}"
+        echo "$workspaces_response" | jq -r '.data.workspaces[0:5][].id' | while read -r ws_id; do
+          echo -e "${BLUE}Processing workspace: $ws_id${NC}"
+          discover_workspace_boards "$ws_id"
+        done
+      else
+        echo -e "${YELLOW}⚠️  No workspaces found to scan${NC}"
+      fi
+      
+      # Analyze connections
+      echo -e "${BLUE}Step 3: Analyzing connections...${NC}"
+      analyze_board_connections
+      
+      # Generate state files
+      echo -e "${BLUE}Step 4: Generating state files...${NC}"
+      generate_state_files
+      
+      # Generate connection map
+      echo -e "${BLUE}Step 5: Generating connection map...${NC}"
+      generate_connection_map
+      
+      echo ""
+      echo -e "${BOLD}🎉 Sample discovery complete!${NC}"
+      echo "Results saved in discovery/ directory"
+      ;;
       --scan-all)
         command="scan-all"
+        shift
+        ;;
+      --scan-sample)
+        command="scan-sample"
         shift
         ;;
       --workspace-id)

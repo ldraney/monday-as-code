@@ -1,0 +1,32 @@
+{
+  "resource_type": "board",
+  "name": "pm-meeting-agendas",
+  "spec": {
+    "board_name": "PM Meeting Agendas",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Person",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Files",
+        "type": "file",
+        "description": null
+      }
+    ]
+  }
+}

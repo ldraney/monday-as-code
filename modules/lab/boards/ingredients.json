@@ -1,0 +1,62 @@
+{
+  "resource_type": "board",
+  "name": "ingredients",
+  "spec": {
+    "board_name": "Ingredients",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "link to EPOs - External Purchase Orders",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "SDS",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Spec Sheet",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Inflow Link",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "link to Vendor Accounts",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "monday Doc v2",
+        "type": "direct_doc",
+        "description": null
+      },
+      {
+        "title": "Cost",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "resell price",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "link to Development",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}

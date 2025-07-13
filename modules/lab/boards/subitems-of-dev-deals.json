@@ -1,0 +1,37 @@
+{
+  "resource_type": "board",
+  "name": "subitems-of-dev-deals",
+  "spec": {
+    "board_name": "Subitems of Dev Deals",
+    "board_kind": "share",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "task complete",
+        "type": "checkbox",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Owner",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Date",
+        "type": "date",
+        "description": null
+      }
+    ]
+  }
+}

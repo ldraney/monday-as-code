@@ -1,0 +1,102 @@
+{
+  "resource_type": "board",
+  "name": "bulk-batch-traceability",
+  "spec": {
+    "board_name": "Bulk Batch Traceability",
+    "board_kind": "share",
+    "description": "https://docs.google.com/spreadsheets/d/15I5FqBmTmW4lxkXc_1E4JcAhmjaj6oNlefLv_gVYhbE/edit?gid=0#gid=0",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Batch Code",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "MO - bulk",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Product Templates",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "COA Template",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Batch Record Template",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "EPOs - Ingredients",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Ingredients Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Assignee",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Batch Record",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "COA",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Micro Test (24-48hrs)",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Stability",
+        "type": "checkbox",
+        "description": null
+      },
+      {
+        "title": "Templates",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "batch size",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Production (finished product)",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}

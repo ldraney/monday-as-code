@@ -1,0 +1,87 @@
+{
+  "resource_type": "board",
+  "name": "content-calendar",
+  "spec": {
+    "board_name": "Content Calendar",
+    "board_kind": "public",
+    "description": "Plan, create, and publish marketing content across all channels",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Content Type",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Author",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Reviewer",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Due Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Publish Date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Priority",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Channels",
+        "type": "tags",
+        "description": null
+      },
+      {
+        "title": "Campaign",
+        "type": "tags",
+        "description": null
+      },
+      {
+        "title": "Target Audience",
+        "type": "tags",
+        "description": null
+      },
+      {
+        "title": "Word Count",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Content Brief",
+        "type": "long_text",
+        "description": null
+      },
+      {
+        "title": "Key Messages",
+        "type": "long_text",
+        "description": null
+      },
+      {
+        "title": "SEO Keywords",
+        "type": "long_text",
+        "description": null
+      }
+    ]
+  }
+}

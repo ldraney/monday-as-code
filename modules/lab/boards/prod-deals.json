@@ -1,0 +1,167 @@
+{
+  "resource_type": "board",
+  "name": "prod-deals",
+  "spec": {
+    "board_name": "Prod Deals",
+    "board_kind": "share",
+    "description": "Learn how to use monday CRM: https://youtu.be/QjKcGGVPLVE",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Tasks",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Owners",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Deal Type",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Stage",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Contact(s)",
+        "type": "board_relation",
+        "description": "This column is connected to the Contacts board. You can choose an existing contact, or create a new contact here."
+      },
+      {
+        "title": "Run Date",
+        "type": "timeline",
+        "description": null
+      },
+      {
+        "title": "Last interaction",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Baseline of Last interaction (29 Jun '25)",
+        "type": "date",
+        "description": "Snapshot of \"Last interaction\" column from 29 Jun '25"
+      },
+      {
+        "title": "Difference",
+        "type": "formula",
+        "description": "Difference from Last interaction created on 29 Jun '25"
+      },
+      {
+        "title": "Deal creation date",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Shipping Deadline",
+        "type": "date",
+        "description": "Set the expected close date and track your forecasted revenue in the Sales Dashboard."
+      },
+      {
+        "title": "Purchasing Deadline",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Projected Time on Line",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Run Dates v2",
+        "type": "timeline",
+        "description": null
+      },
+      {
+        "title": "Deal Value",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "PO #",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Related Tickets and Docs",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Spec Sheet(s)",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "COA(s)",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Invoice",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Inflow Sales Order",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Production",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Production Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Bulk Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Batchcode",
+        "type": "dropdown",
+        "description": null
+      },
+      {
+        "title": "Accounts",
+        "type": "mirror",
+        "description": "This column is connected to the contact. "
+      },
+      {
+        "title": "Close Probability",
+        "type": "numbers",
+        "description": "Set how likely it is to close the deal. This will impact the Forecast Value column. "
+      },
+      {
+        "title": "Forecast Value",
+        "type": "formula",
+        "description": "The forecast value is reached by multiplying the deal value and close probability. The forecast value column is available with the Pro plan."
+      },
+      {
+        "title": "Connect boards",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "link to Blockers",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}

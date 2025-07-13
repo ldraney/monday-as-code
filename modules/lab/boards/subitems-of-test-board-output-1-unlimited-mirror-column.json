@@ -1,0 +1,32 @@
+{
+  "resource_type": "board",
+  "name": "subitems-of-test-board-output-1-unlimited-mirror-column",
+  "spec": {
+    "board_name": "Subitems of Test Board Output 1 Unlimited Mirror Column",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Status subitem",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Date subitem",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Test Board Input",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "resource_type": "board",
+  "name": "single-project",
+  "spec": {
+    "board_name": "Single Project",
+    "board_kind": "public",
+    "description": "",
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subtasks",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Owner",
+        "type": "people",
+        "description": "The task owner"
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Timeline",
+        "type": "timeline",
+        "description": "The timeline for completing each task"
+      },
+      {
+        "title": "Duration",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Dependent On",
+        "type": "dependency",
+        "description": ""
+      },
+      {
+        "title": "Planned Effort",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Effort Spent",
+        "type": "numbers",
+        "description": null
+      },
+      {
+        "title": "Completion Date",
+        "type": "date",
+        "description": "This is entered automatically by an automation which is triggered by the status changing to done "
+      },
+      {
+        "title": "Completion Status",
+        "type": "formula",
+        "description": "This is a formula column. It calculates whether the task was completed late or on time by comparing the completion date and the end of the timeline"
+      }
+    ]
+  }
+}

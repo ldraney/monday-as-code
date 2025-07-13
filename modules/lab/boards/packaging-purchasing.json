@@ -1,0 +1,52 @@
+{
+  "resource_type": "board",
+  "name": "packaging-purchasing",
+  "spec": {
+    "board_name": "Packaging Purchasing",
+    "board_kind": "public",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Quantity Needed",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Quantity Ordered",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Quantity Received",
+        "type": "text",
+        "description": null
+      },
+      {
+        "title": "Date Requested",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Date Received",
+        "type": "date",
+        "description": null
+      },
+      {
+        "title": "Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Vendor",
+        "type": "text",
+        "description": null
+      }
+    ]
+  }
+}

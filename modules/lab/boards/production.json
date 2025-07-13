@@ -1,0 +1,117 @@
+{
+  "resource_type": "board",
+  "name": "production",
+  "spec": {
+    "board_name": "Production",
+    "board_kind": "share",
+    "description": null,
+    "workspace_id": "${WORKSPACE_ID}",
+    "columns": [
+      {
+        "title": "Name",
+        "type": "name",
+        "description": null
+      },
+      {
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null
+      },
+      {
+        "title": "Owners",
+        "type": "people",
+        "description": null
+      },
+      {
+        "title": "Fulfillment Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Purchasing ETA",
+        "type": "timeline",
+        "description": null
+      },
+      {
+        "title": "Spec Sheet",
+        "type": "file",
+        "description": null
+      },
+      {
+        "title": "Sales Order - Inflow",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "MO - Finished Product",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Materials Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "EPOs - Materials",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Ingredients Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Bulk MO",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Bulk Batch Traceability",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Bulk Status",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Sprints",
+        "type": "dropdown",
+        "description": null
+      },
+      {
+        "title": "Line",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "Line Status",
+        "type": "status",
+        "description": null
+      },
+      {
+        "title": "link to Prod Deals",
+        "type": "board_relation",
+        "description": null
+      },
+      {
+        "title": "Tracking #",
+        "type": "link",
+        "description": null
+      },
+      {
+        "title": "Mirror",
+        "type": "mirror",
+        "description": null
+      },
+      {
+        "title": "Equipment",
+        "type": "board_relation",
+        "description": null
+      }
+    ]
+  }
+}
