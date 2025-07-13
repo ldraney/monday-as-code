@@ -1,0 +1,1476 @@
+[
+  {
+    "id": "9384210357",
+    "name": "Subitems of Prod Deals",
+    "description": null,
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-06-16T15:10:26Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "boolean_mkrrjw7q",
+        "title": "task complete",
+        "type": "checkbox",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "status",
+        "title": "Status",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_positions_v2\":{\"0\":1,\"1\":2,\"2\":0,\"3\":3,\"4\":4,\"5\":9,\"6\":5,\"8\":6,\"9\":7,\"10\":8},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+      },
+      {
+        "id": "person",
+        "title": "Owner",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "date0",
+        "title": "Date",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Subitems",
+        "color": "#579bfc"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9384209967",
+    "name": "Prod Deals",
+    "description": "Learn how to use monday CRM: https://youtu.be/QjKcGGVPLVE",
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-06-27T18:04:11Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "subitems",
+        "title": "Tasks",
+        "type": "subtasks",
+        "description": null,
+        "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[9384210357]}"
+      },
+      {
+        "id": "deal_stage",
+        "title": "Stage",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":108,\"3\":16,\"4\":109,\"6\":9,\"7\":6,\"9\":3,\"14\":15,\"15\":7,\"16\":4,\"108\":14,\"109\":0},\"deactivated_labels\":[],\"labels\":{\"1\":\"Closed - PO\",\"2\":\"Lost\",\"3\":\"Proposal\",\"4\":\"Discovery\",\"5\":\"Backlog\",\"6\":\"Compounding\",\"8\":\"Samples\"},\"labels_positions_v2\":{\"1\":5,\"2\":6,\"3\":3,\"4\":1,\"5\":0,\"6\":4,\"8\":2},\"labels_colors\":{\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"4\":{\"color\":\"#5559df\",\"border\":\"#5559df\",\"var_name\":\"indigo\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"6\":{\"color\":\"#ffcb00\",\"border\":\"#c0ab1b\",\"var_name\":\"yellow\"},\"8\":{\"color\":\"#cab641\",\"border\":\"#c0ab31\",\"var_name\":\"mustered\"}}}"
+      },
+      {
+        "id": "deal_owner",
+        "title": "Owner",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "deal_value",
+        "title": "Deal Value",
+        "type": "numbers",
+        "description": null,
+        "settings_str": "{\"unit\":{\"symbol\":\"$\",\"direction\":\"left\"},\"function\":\"sum\"}"
+      },
+      {
+        "id": "deal_contact",
+        "title": "Contact(s)",
+        "type": "board_relation",
+        "description": "This column is connected to the Contacts board. You can choose an existing contact, or create a new contact here.",
+        "settings_str": "{\"boardIds\":[9161287505,9409073763],\"boardId\":9161287505,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"9161287505\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"contact_account\"}}},\"staticImage\":\"contacts\"}"
+      },
+      {
+        "id": "deal_account",
+        "title": "Accounts",
+        "type": "mirror",
+        "description": "This column is connected to the contact. ",
+        "settings_str": "{\"relation_column\":{\"deal_contact\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"9161287505\":[\"contact_account\"],\"9409073763\":[\"contact_account\"]}}"
+      },
+      {
+        "id": "deal_expected_close_date",
+        "title": "Expected Close Date",
+        "type": "date",
+        "description": "Set the expected close date and track your forecasted revenue in the Sales Dashboard.",
+        "settings_str": "{}"
+      },
+      {
+        "id": "deal_close_probability",
+        "title": "Close Probability",
+        "type": "numbers",
+        "description": "Set how likely it is to close the deal. This will impact the Forecast Value column. ",
+        "settings_str": "{\"hide_footer\":true,\"unit\":{\"symbol\":\"%\",\"custom_unit\":\"\",\"direction\":\"right\"},\"function\":\"average\"}"
+      },
+      {
+        "id": "deal_forecast_value",
+        "title": "Forecast Value",
+        "type": "formula",
+        "description": "The forecast value is reached by multiplying the deal value and close probability. The forecast value column is available with the Pro plan.",
+        "settings_str": "{\"formula\":\"{deal_value}*{deal_close_probability}\",\"hide_footer\":true}"
+      },
+      {
+        "id": "date__1",
+        "title": "Last interaction",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "custom_mknwwj0z",
+        "title": "Quotes & Invoices",
+        "type": "unsupported",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "board_relation_mkrb62ea",
+        "title": "PEL-Development",
+        "type": "board_relation",
+        "description": null,
+        "settings_str": "{\"allowCreateReflectionColumn\":false,\"boardIds\":[8446397459],\"boardId\":8446397459}"
+      },
+      {
+        "id": "lookup_mkrb94za",
+        "title": "Lab Status",
+        "type": "mirror",
+        "description": null,
+        "settings_str": "{\"relation_column\":{\"board_relation_mkrb62ea\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"8446397459\":[\"status_mkmr4hpt\"]},\"sumType\":\"allStatuses\"}"
+      },
+      {
+        "id": "deal_creation_date",
+        "title": "Deal creation date",
+        "type": "date",
+        "description": null,
+        "settings_str": "{\"hide_footer\":false}"
+      },
+      {
+        "id": "text_mkrcbmwq",
+        "title": "Critical Comments",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "dropdown_mkrb3859",
+        "title": "Deal Type",
+        "type": "dropdown",
+        "description": null,
+        "settings_str": "{\"limit_select\":false,\"hide_footer\":false,\"labels\":[{\"id\":1,\"name\":\"Tech Transfer\"},{\"id\":2,\"name\":\"Custom Formulation\"},{\"id\":3,\"name\":\"Semi-Custom\"},{\"id\":4,\"name\":\"Reverse Engineer\"}],\"deactivated_labels\":[]}"
+      },
+      {
+        "id": "dropdown_mkrrs7d4",
+        "title": "KPI tracking",
+        "type": "dropdown",
+        "description": null,
+        "settings_str": "{\"limit_select\":false,\"hide_footer\":false,\"labels\":[{\"id\":1,\"name\":\"intake call\"},{\"id\":2,\"name\":\"contract signed\"},{\"id\":3,\"name\":\"invoice paid\"}],\"deactivated_labels\":[]}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Active Deals",
+        "color": "#0086c0"
+      },
+      {
+        "id": "closed",
+        "title": "Closed Won",
+        "color": "#00c875"
+      }
+    ],
+    "views": [
+      {
+        "id": "199453312",
+        "name": "Form",
+        "type": "FormBoardView",
+        "settings_str": "{\"columns\":{\"name\":{\"visible\":true,\"question\":\"Name\",\"type\":\"name\"},\"subitems\":{\"visible\":true,\"question\":\"Tasks\",\"type\":\"subtasks\"},\"deal_creation_date\":{\"visible\":true,\"question\":\"Deal creation date\",\"type\":\"date\"},\"deal_owner\":{\"visible\":false,\"question\":\"Owner\",\"type\":\"multiple-person\"},\"date__1\":{\"visible\":true,\"question\":\"Last interaction\",\"type\":\"date\"},\"text_mkrcbmwq\":{\"visible\":true,\"question\":\"Critical Comments\",\"type\":\"text\"},\"deal_contact\":{\"visible\":false,\"question\":\"Contact(s)\",\"type\":\"board-relation\"},\"board_relation_mkrb62ea\":{\"visible\":false,\"question\":\"PEL-Development\",\"type\":\"board-relation\"},\"deal_stage\":{\"visible\":true,\"question\":\"Stage\",\"type\":\"color\"},\"deal_close_probability\":{\"visible\":true,\"question\":\"Close Probability\",\"type\":\"numeric\"},\"deal_value\":{\"visible\":true,\"question\":\"Deal Value\",\"type\":\"numeric\"},\"deal_expected_close_date\":{\"visible\":true,\"question\":\"Expected Close Date\",\"type\":\"date\"},\"board_relation_mkrjp1cr\":{\"visible\":false,\"question\":\"Connect boards\",\"type\":\"board-relation\"},\"pulse__update\":{\"visible\":false,\"question\":\"Update\"}},\"formTitle\":\"Deals\",\"show_name_question\":true,\"sortedQuestionsList\":[\"name\",\"subitems\",\"deal_creation_date\",\"date__1\",\"text_mkrcbmwq\",\"deal_stage\",\"deal_close_probability\",\"deal_value\",\"deal_expected_close_date\"]}"
+      }
+    ],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9384202696",
+    "name": "Subitems of Deals",
+    "description": null,
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-06-16T15:08:47Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "person",
+        "title": "Owner",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "status",
+        "title": "Status",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_positions_v2\":{\"0\":1,\"1\":2,\"2\":0,\"3\":3,\"4\":4,\"5\":9,\"6\":5,\"8\":6,\"9\":7,\"10\":8},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+      },
+      {
+        "id": "date0",
+        "title": "Date",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Subitems",
+        "color": "#579bfc"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9384202537",
+    "name": "Deals",
+    "description": "Learn how to use monday CRM: https://youtu.be/QjKcGGVPLVE",
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-06-16T15:08:48Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "subitems",
+        "title": "Tasks",
+        "type": "subtasks",
+        "description": null,
+        "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[9384202696]}"
+      },
+      {
+        "id": "deal_stage",
+        "title": "Stage",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":108,\"3\":16,\"4\":109,\"6\":9,\"7\":6,\"9\":3,\"14\":15,\"15\":7,\"16\":4,\"108\":14,\"109\":0},\"labels\":{\"0\":\"Negotiation\",\"1\":\"Won\",\"2\":\"Lost\",\"3\":\"Proposal\",\"4\":\"New\",\"5\":\"\",\"15\":\"Discovery\"},\"labels_positions_v2\":{\"0\":3,\"1\":4,\"2\":5,\"3\":2,\"4\":0,\"5\":6,\"15\":1},\"labels_colors\":{\"0\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"4\":{\"color\":\"#5559df\",\"border\":\"#5559df\",\"var_name\":\"indigo\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"15\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"}}}"
+      },
+      {
+        "id": "deal_owner",
+        "title": "Owner",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "deal_value",
+        "title": "Deal Value",
+        "type": "numbers",
+        "description": null,
+        "settings_str": "{\"unit\":{\"symbol\":\"$\",\"direction\":\"left\"},\"function\":\"sum\"}"
+      },
+      {
+        "id": "deal_contact",
+        "title": "Contacts",
+        "type": "board_relation",
+        "description": "This column is connected to the Contacts board. You can choose an existing contact, or create a new contact here.",
+        "settings_str": "{\"boardIds\":[9247066801],\"boardId\":9247066801,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"9247066801\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"contact_account\"}}},\"staticImage\":\"contacts\"}"
+      },
+      {
+        "id": "deal_account",
+        "title": "Accounts",
+        "type": "mirror",
+        "description": "This column is connected to the contact. ",
+        "settings_str": "{\"relation_column\":{\"deal_contact\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"9247066801\":[\"contact_account\"]}}"
+      },
+      {
+        "id": "deal_expected_close_date",
+        "title": "Expected Close Date",
+        "type": "date",
+        "description": "Set the expected close date and track your forecasted revenue in the Sales Dashboard.",
+        "settings_str": "{}"
+      },
+      {
+        "id": "deal_close_probability",
+        "title": "Close Probability",
+        "type": "numbers",
+        "description": "Set how likely it is to close the deal. This will impact the Forecast Value column. ",
+        "settings_str": "{\"hide_footer\":true,\"unit\":{\"symbol\":\"%\",\"custom_unit\":\"\",\"direction\":\"right\"},\"function\":\"average\"}"
+      },
+      {
+        "id": "deal_forecast_value",
+        "title": "Forecast Value",
+        "type": "formula",
+        "description": "The forecast value is reached by multiplying the deal value and close probability. The forecast value column is available with the Pro plan.",
+        "settings_str": "{\"formula\":\"{deal_value}*{deal_close_probability}\",\"hide_footer\":true}"
+      },
+      {
+        "id": "date__1",
+        "title": "Last interaction",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "custom_mknwwj0z",
+        "title": "Quotes & Invoices",
+        "type": "unsupported",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Active Deals",
+        "color": "#0086c0"
+      },
+      {
+        "id": "closed",
+        "title": "Closed Won",
+        "color": "#00c875"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9384198301",
+    "name": "New Board",
+    "description": null,
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-06-16T15:08:23Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "person",
+        "title": "Person",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "status",
+        "title": "Status",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_positions_v2\":{\"0\":0,\"1\":2,\"2\":1,\"5\":3},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+      },
+      {
+        "id": "date4",
+        "title": "Date",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Group Title",
+        "color": "#579bfc"
+      },
+      {
+        "id": "group_title",
+        "title": "Group Title",
+        "color": "#a25ddc"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9384177707",
+    "name": "Subitems of Deals",
+    "description": null,
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-06-16T15:07:00Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "person",
+        "title": "Owner",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "status",
+        "title": "Status",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_positions_v2\":{\"0\":1,\"1\":2,\"2\":0,\"3\":3,\"4\":4,\"5\":9,\"6\":5,\"8\":6,\"9\":7,\"10\":8},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+      },
+      {
+        "id": "date0",
+        "title": "Date",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Subitems",
+        "color": "#579bfc"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9384177206",
+    "name": "Deals",
+    "description": "Learn how to use monday CRM: https://youtu.be/QjKcGGVPLVE",
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-06-16T15:07:01Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "subitems",
+        "title": "Tasks",
+        "type": "subtasks",
+        "description": null,
+        "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[9384177707]}"
+      },
+      {
+        "id": "deal_stage",
+        "title": "Stage",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":108,\"3\":16,\"4\":109,\"6\":9,\"7\":6,\"9\":3,\"14\":15,\"15\":7,\"16\":4,\"108\":14,\"109\":0},\"labels\":{\"0\":\"Negotiation\",\"1\":\"Won\",\"2\":\"Lost\",\"3\":\"Proposal\",\"4\":\"New\",\"5\":\"\",\"15\":\"Discovery\"},\"labels_positions_v2\":{\"0\":3,\"1\":4,\"2\":5,\"3\":2,\"4\":0,\"5\":6,\"15\":1},\"labels_colors\":{\"0\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"4\":{\"color\":\"#5559df\",\"border\":\"#5559df\",\"var_name\":\"indigo\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"15\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"}}}"
+      },
+      {
+        "id": "deal_owner",
+        "title": "Owner",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "deal_value",
+        "title": "Deal Value",
+        "type": "numbers",
+        "description": null,
+        "settings_str": "{\"unit\":{\"symbol\":\"$\",\"direction\":\"left\"},\"function\":\"sum\"}"
+      },
+      {
+        "id": "deal_contact",
+        "title": "Contacts",
+        "type": "board_relation",
+        "description": "This column is connected to the Contacts board. You can choose an existing contact, or create a new contact here.",
+        "settings_str": "{\"boardIds\":[9247066801],\"boardId\":9247066801,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"9247066801\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"contact_account\"}}},\"staticImage\":\"contacts\"}"
+      },
+      {
+        "id": "deal_account",
+        "title": "Accounts",
+        "type": "mirror",
+        "description": "This column is connected to the contact. ",
+        "settings_str": "{\"relation_column\":{\"deal_contact\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"9247066801\":[\"contact_account\"]}}"
+      },
+      {
+        "id": "deal_expected_close_date",
+        "title": "Expected Close Date",
+        "type": "date",
+        "description": "Set the expected close date and track your forecasted revenue in the Sales Dashboard.",
+        "settings_str": "{}"
+      },
+      {
+        "id": "deal_close_probability",
+        "title": "Close Probability",
+        "type": "numbers",
+        "description": "Set how likely it is to close the deal. This will impact the Forecast Value column. ",
+        "settings_str": "{\"hide_footer\":true,\"unit\":{\"symbol\":\"%\",\"custom_unit\":\"\",\"direction\":\"right\"},\"function\":\"average\"}"
+      },
+      {
+        "id": "deal_forecast_value",
+        "title": "Forecast Value",
+        "type": "formula",
+        "description": "The forecast value is reached by multiplying the deal value and close probability. The forecast value column is available with the Pro plan.",
+        "settings_str": "{\"formula\":\"{deal_value}*{deal_close_probability}\",\"hide_footer\":true}"
+      },
+      {
+        "id": "date__1",
+        "title": "Last interaction",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "custom_mknwwj0z",
+        "title": "Quotes & Invoices",
+        "type": "unsupported",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Active Deals",
+        "color": "#0086c0"
+      },
+      {
+        "id": "closed",
+        "title": "Closed Won",
+        "color": "#00c875"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9247066880",
+    "name": "Subitems of Client Projects",
+    "description": null,
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-05-28T10:24:10Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "person",
+        "title": "Owner",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "status",
+        "title": "Status",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_positions_v2\":{\"0\":1,\"1\":2,\"2\":0,\"3\":3,\"4\":4,\"5\":9,\"6\":5,\"8\":6,\"9\":7,\"10\":8},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+      },
+      {
+        "id": "date0",
+        "title": "Date",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "subitems_of_596368986",
+        "title": "Subitems",
+        "color": "#a25ddc"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9247066852",
+    "name": "Subitems of Deals",
+    "description": null,
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-05-28T10:24:09Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "person",
+        "title": "Owner",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "status",
+        "title": "Status",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_positions_v2\":{\"0\":1,\"1\":2,\"2\":0,\"3\":3,\"4\":4,\"5\":9,\"6\":5,\"8\":6,\"9\":7,\"10\":8},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+      },
+      {
+        "id": "date0",
+        "title": "Date",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Subitems",
+        "color": "#579bfc"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9247066805",
+    "name": "Activities",
+    "description": "The activities board shows all the activities that are added using the Emails & Activities in the page.\nEvery time you add an activity through Emails & Activities, a new activity will be added to this board.",
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-05-28T10:24:15Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "activity_type",
+        "title": "Activity Type",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"7\":153,\"153\":7},\"labels\":{\"0\":\"Call summary\",\"107\":\"Meeting\",\"153\":\"Phone call\"},\"labels_positions_v2\":{\"0\":2,\"5\":3,\"107\":0,\"153\":1},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"107\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"153\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"}}}"
+      },
+      {
+        "id": "activity_owner",
+        "title": "Owner",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "activity_start_time",
+        "title": "Start time",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "activity_end_time",
+        "title": "End time",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "activity_status",
+        "title": "Status",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[4],\"color_mapping\":{\"0\":102,\"1\":14,\"4\":15,\"6\":4,\"14\":1,\"15\":6,\"102\":0},\"labels\":{\"3\":\"Open\",\"4\":\"Done\"},\"labels_positions_v2\":{\"3\":0,\"4\":1,\"5\":2},\"labels_colors\":{\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"}}}"
+      },
+      {
+        "id": "activity_item",
+        "title": "Related item",
+        "type": "board_relation",
+        "description": null,
+        "settings_str": "{\"allowMultipleBoards\":true,\"boardIds\":[9247066801,9247066796,9247066802,9247066798,9247066805],\"boardId\":9247066801}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Account Activities",
+        "color": "#579bfc"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9247066802",
+    "name": "Leads",
+    "description": "",
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-06-16T19:04:58Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "lead_status",
+        "title": "Status",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"1\":6,\"3\":7,\"6\":1,\"7\":3,\"14\":19,\"15\":103,\"19\":14,\"103\":15},\"labels\":{\"0\":\"New Lead\",\"5\":\"\",\"11\":\"Unqualified\",\"14\":\"Contacted\",\"15\":\"Attempted to contact\",\"103\":\"Qualified\"},\"labels_positions_v2\":{\"0\":1,\"5\":0,\"11\":5,\"14\":3,\"15\":2,\"103\":4},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"11\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"14\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"},\"15\":{\"color\":\"#ffadad\",\"border\":\"#ffadad\",\"var_name\":\"peach\"},\"103\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"}}}"
+      },
+      {
+        "id": "color_mkrzg880",
+        "title": "Cadence",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"2\":103,\"9\":11,\"11\":9,\"103\":2},\"labels\":{\"0\":\"Phone call 2\",\"1\":\"Email 2\",\"2\":\"Email 1\",\"3\":\"Email 3\",\"4\":\"Phone call 3\",\"5\":\"No contact attempt\",\"6\":\"Final email\",\"7\":\"Discovery call scheduled\",\"8\":\"successfull Contact\",\"9\":\"Not interested\",\"10\":\"Phone Call 1\"},\"labels_positions_v2\":{\"0\":4,\"1\":3,\"2\":2,\"3\":5,\"4\":6,\"5\":0,\"6\":7,\"7\":8,\"8\":9,\"9\":10,\"10\":1},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#ffadad\",\"border\":\"#ffadad\",\"var_name\":\"peach\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"7\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"8\":{\"color\":\"#cab641\",\"border\":\"#c0ab31\",\"var_name\":\"mustered\"},\"9\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"10\":{\"color\":\"#333333\",\"border\":\"#000\",\"var_name\":\"soft-black\"}}}"
+      },
+      {
+        "id": "button",
+        "title": "Create a contact",
+        "type": "button",
+        "description": "",
+        "settings_str": "{\"color\":\"#037f4c\",\"buttonText\":\"Move to Contacts\"}"
+      },
+      {
+        "id": "lead_company",
+        "title": "Company",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "text",
+        "title": "Title",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "lead_email",
+        "title": "Email",
+        "type": "email",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "lead_phone",
+        "title": "Phone",
+        "type": "phone",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "date__1",
+        "title": "Last interaction",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "enrolled_sequences_mkn3bg52",
+        "title": "Active sequences",
+        "type": "unsupported",
+        "description": "",
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "New Leads",
+        "color": "#579bfc"
+      }
+    ],
+    "views": [
+      {
+        "id": "196668632",
+        "name": "Lead submission form",
+        "type": "FormBoardView",
+        "settings_str": "{\"columns\":{\"name\":{\"visible\":true,\"question\":\"Name\",\"type\":\"name\"},\"lead_status\":{\"visible\":true,\"question\":\"Status\",\"type\":\"color\"},\"lead_company\":{\"visible\":true,\"question\":\"Company\",\"type\":\"text\"},\"text\":{\"visible\":true,\"question\":\"Title\",\"type\":\"text\"},\"lead_email\":{\"visible\":true,\"question\":\"Email\",\"type\":\"email\"},\"lead_phone\":{\"visible\":true,\"question\":\"Phone\",\"type\":\"phone\"},\"pulse__update\":{\"visible\":false,\"question\":\"Update\"}},\"formTitle\":\"Leads\",\"show_name_question\":true,\"sortedQuestionsList\":[\"name\",\"lead_status\",\"lead_company\",\"text\",\"lead_email\",\"lead_phone\"]}"
+      }
+    ],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9247066801",
+    "name": "Contacts",
+    "description": "Welcome to your contacts board! Here you can store and manage all of your contacts",
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-06-16T15:08:48Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "contact_email",
+        "title": "Email",
+        "type": "email",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "contact_account",
+        "title": "Accounts",
+        "type": "board_relation",
+        "description": null,
+        "settings_str": "{\"boardIds\":[9247066798],\"boardId\":null,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"9247066798\":{\"description\":{\"refId\":\"status\"},\"name\":{\"refId\":\"name\"}}},\"staticImage\":\"accounts\"}"
+      },
+      {
+        "id": "contact_deal",
+        "title": "Deals",
+        "type": "board_relation",
+        "description": null,
+        "settings_str": "{\"boardIds\":[9247066796,9384138766,9384177206,9384202537],\"boardId\":null,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"9247066796\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"deal_account\"}}},\"staticImage\":\"opportunities\"}"
+      },
+      {
+        "id": "mirror2",
+        "title": "Deals value",
+        "type": "mirror",
+        "description": null,
+        "settings_str": "{\"relation_column\":{\"contact_deal\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"9247066796\":[\"deal_value\"],\"9384138766\":[\"deal_value\"],\"9384177206\":[\"deal_value\"],\"9384202537\":[\"deal_value\"]}}"
+      },
+      {
+        "id": "contact_phone",
+        "title": "Phone",
+        "type": "phone",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "title5",
+        "title": "Title",
+        "type": "dropdown",
+        "description": null,
+        "settings_str": "{\"labels\":[{\"name\":\"CEO\",\"id\":1},{\"name\":\"COO\",\"id\":2},{\"name\":\"CIO\",\"id\":3}]}"
+      },
+      {
+        "id": "status",
+        "title": "Type",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"0\":7,\"1\":16,\"2\":107,\"3\":109,\"4\":15,\"7\":4,\"9\":13,\"13\":0,\"15\":9,\"16\":2,\"107\":3,\"109\":1},\"labels\":{\"0\":\"Lead\",\"1\":\"Customer\",\"2\":\"Vendor\",\"5\":\"\",\"6\":\"Qualified Lead\",\"13\":\"Partner\"},\"labels_positions_v2\":{\"0\":0,\"1\":2,\"2\":4,\"5\":5,\"6\":1,\"13\":3},\"labels_colors\":{\"0\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"1\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"2\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"13\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"}}}"
+      },
+      {
+        "id": "status5",
+        "title": "Priority",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"4\":6,\"6\":7,\"7\":19,\"19\":4},\"labels\":{\"6\":\"Medium\",\"7\":\"High\",\"108\":\"Low\"},\"labels_positions_v2\":{\"5\":0,\"6\":2,\"7\":1,\"108\":3},\"labels_colors\":{\"6\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"7\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"},\"108\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"}}}"
+      },
+      {
+        "id": "long_text4",
+        "title": "Comments",
+        "type": "long_text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "text8",
+        "title": "Company",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "custom_mknqtjh2",
+        "title": "Activities",
+        "type": "unsupported",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Active Contacts",
+        "color": "#037f4c"
+      },
+      {
+        "id": "new_group95562",
+        "title": "Inactive Contacts",
+        "color": "#BB3354"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9247066798",
+    "name": "Accounts",
+    "description": "",
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-05-28T10:24:18Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "company_domain",
+        "title": "Domain",
+        "type": "link",
+        "description": "Enter a domain to auto-enrich columns with data from Crunchbase. Enjoy 1000 free enrichments. Unlock more in the Crunchbase app.",
+        "settings_str": "{}"
+      },
+      {
+        "id": "account_contact",
+        "title": "Contacts",
+        "type": "board_relation",
+        "description": "This column is connected to the Contacts board. Connect as many contacts as needed to the account.",
+        "settings_str": "{\"allowMultipleBoards\":true,\"boardIds\":[9247066801],\"boardId\":9247066801,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"9247066801\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"contact_account\"}}},\"staticImage\":\"contacts\"}"
+      },
+      {
+        "id": "account_deal",
+        "title": "Deals",
+        "type": "mirror",
+        "description": "This column presents all the deals associated with the account.",
+        "settings_str": "{\"relation_column\":{\"account_contact\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"9247066801\":[\"contact_deal\"]}}"
+      },
+      {
+        "id": "industry",
+        "title": "Industry",
+        "type": "dropdown",
+        "description": null,
+        "settings_str": "{\"labels\":[{\"id\":2,\"name\":\"Financial Services\"},{\"id\":3,\"name\":\"Lending and Investments\"},{\"id\":4,\"name\":\"Software\"},{\"id\":5,\"name\":\"Administrative Services\"},{\"id\":6,\"name\":\"Advertising\"},{\"id\":7,\"name\":\"Agriculture and Farming\"},{\"id\":8,\"name\":\"Apps\"},{\"id\":9,\"name\":\"Artificial Intelligence\"},{\"id\":10,\"name\":\"Biotechnology\"},{\"id\":11,\"name\":\"Clothing and Apparel\"},{\"id\":12,\"name\":\"Commerce and Shopping\"},{\"id\":13,\"name\":\"Community and Lifestyle\"},{\"id\":14,\"name\":\"Consumer Electronics\"},{\"id\":15,\"name\":\"Consumer Goods\"},{\"id\":16,\"name\":\"Content and Publishing\"},{\"id\":17,\"name\":\"Data and Analytics\"},{\"id\":18,\"name\":\"Design\"},{\"id\":19,\"name\":\"Education\"},{\"id\":20,\"name\":\"Energy\"},{\"id\":21,\"name\":\"Events\"},{\"id\":22,\"name\":\"Food and Beverage\"},{\"id\":23,\"name\":\"Gaming\"},{\"id\":24,\"name\":\"Government and Military\"},{\"id\":25,\"name\":\"Hardware\"},{\"id\":26,\"name\":\"Health Care\"},{\"id\":27,\"name\":\"Information Technology\"},{\"id\":28,\"name\":\"Internet Services\"},{\"id\":29,\"name\":\"Manufacturing\"},{\"id\":30,\"name\":\"Media and Entertainment\"},{\"id\":31,\"name\":\"Messaging and Telecommunications\"},{\"id\":32,\"name\":\"Mobile\"},{\"id\":33,\"name\":\"Music and Audio\"},{\"id\":34,\"name\":\"Natural Resources\"},{\"id\":35,\"name\":\"Navigation and Mapping\"},{\"id\":36,\"name\":\"Other\"},{\"id\":37,\"name\":\"Payments\"},{\"id\":38,\"name\":\"Platforms\"},{\"id\":39,\"name\":\"Privacy and Security\"},{\"id\":40,\"name\":\"Professional Services\"},{\"id\":41,\"name\":\"Real Estate\"},{\"id\":42,\"name\":\"Sales and Marketing\"},{\"id\":43,\"name\":\"Science and Engineering\"},{\"id\":44,\"name\":\"Sports\"},{\"id\":45,\"name\":\"Sustainability\"},{\"id\":46,\"name\":\"Transportation\"},{\"id\":47,\"name\":\"Travel and Tourism\"},{\"id\":48,\"name\":\"Video\"}]}"
+      },
+      {
+        "id": "company_description",
+        "title": "Description",
+        "type": "long_text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "employee_count",
+        "title": "No. of employees",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "headquarters_loc",
+        "title": "Headquarters location",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "company_profile",
+        "title": "Company profile",
+        "type": "link",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Companies",
+        "color": "#0086c0"
+      }
+    ],
+    "views": [
+      {
+        "id": "196668627",
+        "name": "Main View",
+        "type": "TableBoardView",
+        "settings_str": "{}"
+      }
+    ],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9247066797",
+    "name": "Client Projects",
+    "description": "The essence of this board is to provide a high-level overview of your project. This is the place to plan and track your progress. \nFor more information and a full explanation of how to use this template check out this video:\n https://www.youtube.com/watch?v=ug5TyvMd-3Y&feature=youtu.be",
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-05-28T10:24:11Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "subitems",
+        "title": "Subitems",
+        "type": "subtasks",
+        "description": null,
+        "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[9247066880]}"
+      },
+      {
+        "id": "project_owner",
+        "title": "Owner",
+        "type": "people",
+        "description": "The activity owner",
+        "settings_str": "{\"max_people_allowed\":\"0\"}"
+      },
+      {
+        "id": "project_prority",
+        "title": "Priority",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"0\":3,\"1\":107,\"2\":16,\"3\":0,\"16\":2,\"107\":1},\"labels\":{\"0\":\"Medium\",\"1\":\"High\",\"2\":\"Low\"},\"labels_colors\":{\"0\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"1\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"2\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"}}}"
+      },
+      {
+        "id": "project_timeline",
+        "title": "Timeline",
+        "type": "timeline",
+        "description": "The column shows a timeframe for  each activity. You can see a summary of these activities at the bottom of each group. ",
+        "settings_str": "{\"show_set_as_milestone\":false}"
+      },
+      {
+        "id": "project_status",
+        "title": "Status",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\",\"5\":\"Not Started\"},\"labels_positions_v2\":{\"0\":1,\"1\":3,\"2\":2,\"5\":0},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"}}}"
+      },
+      {
+        "id": "project_opportunity",
+        "title": "Deals",
+        "type": "board_relation",
+        "description": null,
+        "settings_str": "{\"allowCreateReflectionColumn\":true,\"boardIds\":[9247066796],\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"9247066796\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"industry\"},\"info1\":{\"refId\":\"status\"}}},\"staticImage\":\"opportunities\",\"boardId\":9247066796}"
+      },
+      {
+        "id": "project_contact",
+        "title": "Contact",
+        "type": "board_relation",
+        "description": null,
+        "settings_str": "{\"boardIds\":[9247066801],\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"9247066801\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"title5\"}}},\"staticImage\":\"contacts\",\"boardId\":9247066801}"
+      },
+      {
+        "id": "connect_boards",
+        "title": "Accounts",
+        "type": "board_relation",
+        "description": null,
+        "settings_str": "{\"allowCreateReflectionColumn\":true,\"boardIds\":[9247066798],\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"9247066798\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"industry\"}}},\"staticImage\":\"accounts\",\"boardId\":9247066798}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "new_group29179",
+        "title": "New Projects",
+        "color": "#579bfc"
+      },
+      {
+        "id": "topics",
+        "title": "Completed",
+        "color": "#00c875"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9247066796",
+    "name": "Deals",
+    "description": "Learn how to use monday CRM: https://youtu.be/QjKcGGVPLVE",
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-06-16T19:25:06Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "subitems",
+        "title": "Tasks",
+        "type": "subtasks",
+        "description": null,
+        "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[9247066852]}"
+      },
+      {
+        "id": "deal_stage",
+        "title": "Stage",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":108,\"3\":16,\"4\":109,\"6\":9,\"7\":6,\"9\":3,\"14\":15,\"15\":7,\"16\":4,\"108\":14,\"109\":0},\"labels\":{\"0\":\"Iteration 3\",\"1\":\"Iteration 4\",\"2\":\"Lost\",\"3\":\"Iteration 2\",\"4\":\"Intake Call Held\",\"5\":\"Backlog\",\"6\":\"Iteration 5\",\"15\":\"Iteration 1\"},\"labels_positions_v2\":{\"0\":4,\"1\":5,\"2\":7,\"3\":3,\"4\":1,\"5\":0,\"6\":6,\"15\":2},\"labels_colors\":{\"0\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"4\":{\"color\":\"#5559df\",\"border\":\"#5559df\",\"var_name\":\"indigo\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"6\":{\"color\":\"#ffcb00\",\"border\":\"#c0ab1b\",\"var_name\":\"yellow\"},\"15\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"}}}"
+      },
+      {
+        "id": "deal_owner",
+        "title": "Owner",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "deal_value",
+        "title": "Deal Value",
+        "type": "numbers",
+        "description": null,
+        "settings_str": "{\"unit\":{\"symbol\":\"$\",\"direction\":\"left\"},\"function\":\"sum\"}"
+      },
+      {
+        "id": "deal_contact",
+        "title": "Contacts",
+        "type": "board_relation",
+        "description": "This column is connected to the Contacts board. You can choose an existing contact, or create a new contact here.",
+        "settings_str": "{\"boardIds\":[9247066801],\"boardId\":9247066801,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"9247066801\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"contact_account\"}}},\"staticImage\":\"contacts\"}"
+      },
+      {
+        "id": "deal_account",
+        "title": "Accounts",
+        "type": "mirror",
+        "description": "This column is connected to the contact. ",
+        "settings_str": "{\"relation_column\":{\"deal_contact\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"9247066801\":[\"contact_account\"]}}"
+      },
+      {
+        "id": "deal_expected_close_date",
+        "title": "Expected Close Date",
+        "type": "date",
+        "description": "Set the expected close date and track your forecasted revenue in the Sales Dashboard.",
+        "settings_str": "{}"
+      },
+      {
+        "id": "deal_close_probability",
+        "title": "Close Probability",
+        "type": "numbers",
+        "description": "Set how likely it is to close the deal. This will impact the Forecast Value column. ",
+        "settings_str": "{\"hide_footer\":true,\"unit\":{\"symbol\":\"%\",\"custom_unit\":\"\",\"direction\":\"right\"},\"function\":\"average\"}"
+      },
+      {
+        "id": "deal_forecast_value",
+        "title": "Forecast Value",
+        "type": "formula",
+        "description": "The forecast value is reached by multiplying the deal value and close probability. The forecast value column is available with the Pro plan.",
+        "settings_str": "{\"formula\":\"{deal_value}*{deal_close_probability}\",\"hide_footer\":true}"
+      },
+      {
+        "id": "date__1",
+        "title": "Last interaction",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "custom_mknwwj0z",
+        "title": "Quotes & Invoices",
+        "type": "unsupported",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "board_relation_mkrzzck9",
+        "title": "link to Leads",
+        "type": "board_relation",
+        "description": null,
+        "settings_str": "{\"allowCreateReflectionColumn\":true,\"boardIds\":[]}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Active Deals",
+        "color": "#0086c0"
+      },
+      {
+        "id": "closed",
+        "title": "Closed Won",
+        "color": "#00c875"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9247066788",
+    "name": "Products & Services",
+    "description": null,
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-05-28T10:24:08Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "product_and_service_description",
+        "title": "Description",
+        "type": "long_text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "product_and_service_price",
+        "title": "Price",
+        "type": "numbers",
+        "description": null,
+        "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+      },
+      {
+        "id": "product_and_service_sku",
+        "title": "SKU",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "product_and_service_type",
+        "title": "Type",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[],\"deactivated_labels\":[],\"color_mapping\":{\"0\":153,\"153\":0},\"labels\":{\"0\":\"Service\",\"3\":\"Inventory\"},\"labels_positions_v2\":{\"0\":1,\"3\":0,\"5\":2},\"labels_colors\":{\"0\":{\"color\":\"#216edf\",\"border\":\"#216edf\",\"var_name\":\"sky\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"}}}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Products",
+        "color": "#579bfc"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  },
+  {
+    "id": "9247066784",
+    "name": "Quotes & Invoices",
+    "description": null,
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-05-28T10:24:07Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "type",
+        "title": "Type",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"deactivated_labels\":[],\"color_mapping\":{\"0\":3,\"1\":4,\"3\":106,\"4\":152,\"106\":154,\"152\":1,\"154\":0},\"labels\":{\"0\":\"Invoice\",\"1\":\"Quote\"},\"labels_colors\":{\"0\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"1\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"}}}"
+      },
+      {
+        "id": "amount",
+        "title": "Amount",
+        "type": "numbers",
+        "description": null,
+        "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+      },
+      {
+        "id": "bill_to",
+        "title": "Recipient",
+        "type": "board_relation",
+        "description": null,
+        "settings_str": "{\"allowCreateReflectionColumn\":false,\"boardIds\":[],\"boardId\":null}"
+      },
+      {
+        "id": "file",
+        "title": "File",
+        "type": "file",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "status",
+        "title": "Status",
+        "type": "status",
+        "description": null,
+        "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Paid\",\"2\":\"Cancelled\",\"3\":\"Sent to client\",\"4\":\"Approved\"},\"labels_positions_v2\":{\"0\":0,\"1\":3,\"2\":4,\"3\":2,\"4\":1,\"5\":5},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"}}}"
+      },
+      {
+        "id": "issue_date",
+        "title": "Issue date",
+        "type": "date",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "creation_log__1",
+        "title": "Owner",
+        "type": "creation_log",
+        "description": null,
+        "settings_str": "{\"mode\":\"personOnly\"}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Quotes & Invoices",
+        "color": "#579bfc"
+      }
+    ],
+    "views": [
+      {
+        "id": "196668620",
+        "name": "Quotes",
+        "type": "TableBoardView",
+        "settings_str": "{}"
+      },
+      {
+        "id": "196668621",
+        "name": "Invoices",
+        "type": "TableBoardView",
+        "settings_str": "{}"
+      }
+    ],
+    "subscribers": [
+      {
+        "id": "70403250",
+        "name": "Lucas Draney",
+        "email": "lucas@pureearthlabs.com"
+      }
+    ]
+  }
+]

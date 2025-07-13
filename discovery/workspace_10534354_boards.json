@@ -1,0 +1,79 @@
+[
+  {
+    "id": "8881824172",
+    "name": "SKU system code",
+    "description": null,
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-05-09T15:33:59Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mkptshxd",
+        "title": "SKU code",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "dropdown_mkptyg5f",
+        "title": "Solubility",
+        "type": "dropdown",
+        "description": null,
+        "settings_str": "{\"labels\":[{\"id\":0,\"name\":\"WAT\"},{\"id\":1,\"name\":\"OIL\"},{\"id\":2,\"name\":\"BTH\"},{\"id\":3,\"name\":\"UNK\"}]}"
+      },
+      {
+        "id": "dropdown_mkptzkjz",
+        "title": "Form",
+        "type": "dropdown",
+        "description": null,
+        "settings_str": "{\"labels\":[{\"id\":0,\"name\":\"PW\"},{\"id\":1,\"name\":\"LQ\"},{\"id\":2,\"name\":\"FL\"},{\"id\":3,\"name\":\"PS\"},{\"id\":4,\"name\":\"GM\"},{\"id\":5,\"name\":\"GR\"},{\"id\":6,\"name\":\"PW/LQ\"},{\"id\":7,\"name\":\"GM/LQ\"},{\"id\":8,\"name\":\"LQ/PW\"},{\"id\":9,\"name\":\"PS/WX\"},{\"id\":10,\"name\":\"LQ/PS\"},{\"id\":11,\"name\":\"WX\"},{\"id\":12,\"name\":\"SL\"},{\"id\":13,\"name\":\"LQ/GM\"},{\"id\":14,\"name\":\"PW/PS\"},{\"id\":15,\"name\":\"WAX\"}]}"
+      },
+      {
+        "id": "text_mkptps3c",
+        "title": "Unique Code",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mkqst7yg",
+        "title": "Supplier",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Group Title",
+        "color": "#037f4c"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "20890183",
+        "name": "Shane Hatch",
+        "email": "shane@earthharbor.com"
+      },
+      {
+        "id": "70343181",
+        "name": "Elena Root",
+        "email": "elena@earthharbor.com"
+      },
+      {
+        "id": "73949401",
+        "name": "Mariana De la Piedra",
+        "email": "mariana@earthharbor.com"
+      }
+    ]
+  }
+]

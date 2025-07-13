@@ -1,0 +1,83 @@
+[
+  {
+    "id": "9205407859",
+    "name": "Sizes",
+    "description": null,
+    "board_kind": "public",
+    "state": "active",
+    "updated_at": "2025-05-30T13:32:50Z",
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "person",
+        "title": "Person",
+        "type": "people",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mkr5zhed",
+        "title": "Label Size",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      },
+      {
+        "id": "file_mkr5cmes",
+        "title": "New Labels",
+        "type": "file",
+        "description": null,
+        "settings_str": "{\"hide_footer\":false}"
+      },
+      {
+        "id": "file_mkrew1sn",
+        "title": "Old Labels",
+        "type": "file",
+        "description": null,
+        "settings_str": "{\"hide_footer\":false}"
+      },
+      {
+        "id": "file_mkr5jnf3",
+        "title": "New Box",
+        "type": "file",
+        "description": null,
+        "settings_str": "{\"hide_footer\":false}"
+      },
+      {
+        "id": "file_mkret4v4",
+        "title": "Old Box",
+        "type": "file",
+        "description": null,
+        "settings_str": "{\"hide_footer\":false}"
+      },
+      {
+        "id": "text_mkr5pn8d",
+        "title": "Box Size",
+        "type": "text",
+        "description": null,
+        "settings_str": "{}"
+      }
+    ],
+    "groups": [
+      {
+        "id": "topics",
+        "title": "Labels",
+        "color": "#579bfc"
+      }
+    ],
+    "views": [],
+    "subscribers": [
+      {
+        "id": "73949401",
+        "name": "Mariana De la Piedra",
+        "email": "mariana@earthharbor.com"
+      }
+    ]
+  }
+]
